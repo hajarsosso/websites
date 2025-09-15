@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/poppins");
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: #fffaf5;
+        font-family: 'poppins';
+        padding:30px 100px;
+    }
+    .cont{
+          display: grid;
+          grid-template-rows: 0.09fr 1.9fr;
+          
+
+      }
+      nav{
+        font-size: 25px;
+        
+
+      }
+      main{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        column-gap: 100px;
+        place-items: center;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.516);
+        /* padding-bottom: 80px; */
+        height: 100vh;
+      }
+      #illu1{
+        align-items: center;
+        width: 500px;
+      }
+      .text {
+        font-size: 22px;
+      }
+      #collab{
+        border: 0;
+        padding: 7px 15px;
+        background-color: transparent;
+        border: 1px solid;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+      #collab:hover{
+        background-color: rgb(154, 154, 154);
+        color: rgb(255, 255, 255);
+      }
+      i.ri-mail-add-fill{
+        color: orange;
+        margin-right: 5px;
+      }
+      .text *{
+        padding-bottom:15px ;
+      }
+      .partn{
+        width: 10pc;
+      }
+      .partners{
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 200px;
+        place-content: center;
+        margin-top: 15px ;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.516);
+        
+      }
+      .aboutMe{
+        margin-top: 8pc;
+        padding-bottom: 4pc;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.516);
+
+      }
+      #aboutMe{
+        background-color: #f9e3cc;
+        width: fit-content;
+        padding: 0 5px;
+        border-radius: 10px;
+      }
+      .text2{
+        font-size: 22px;
+      }
+      #title2{
+        font-size: 3.2pc;
+        margin-bottom: 17px;
+      }
+      #p3{
+        margin-bottom: 45px;
+        color: rgba(0, 0, 0, 0.737);
+        font-size: 16px;
+      }
+      .num{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+      }
+      #p4{
+        background-color: #f9e3cc;
+        width: fit-content;
+        padding: 0 5px;
+        border-radius: 10px;
+        margin-right: 25pc;
+        
+      }
+      .selected{
+        margin-top: 5pc;
+        padding-bottom: 4pc;
+        
+      }
+      .works{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 5pc;
+        place-items: center;
+        
+        row-gap:40px ;
+      }
+      .trinfolio img{
+        width: 30pc;
+        
+      }
+      #span1{
+        font-size: 2pc;
+        font-weight: bold;
+        text-wrap: break-all;
+        height: 0;
+      }
+      .text4{
+        display: grid;
+        grid-template-columns: 1.4fr 0.8fr;
+        row-gap: 0;
+        padding-bottom: 30px;
+
+      }
+      .pro-title{
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <header>
+        <nav><i class="ri-bubble-chart-fill"></i>Kokahu</nav>
+      </header>
+      <main>
+        <div class="text">
+          <h1>Unleashing the art of Visual Storytelling</h1>
+          <p>
+            I am a passionate web designer dedicated to bringing your visions to
+            life. With a keen eye for aesthetics and a deep understanding of
+            user experience, I strive to create captivating websites that leave
+            a lasting impression.
+          </p>
+          <button id="collab"><i class="ri-mail-add-fill"></i>Let's collaborate</button>
+        </div>
+        <img id="illu1" src="illustration1.png" alt="" />
+      </main>
+      
+      <section class="partners">
+        <img class="partn" src="images/14.png" alt="" />
+        <img class="partn" src="images/15.png" alt="" />
+        <img class="partn" src="images/16.png" alt="" />
+      </section>
+      
+      <section class="aboutMe">
+        <div class="illu">
+          <p id="aboutMe">ABOUT ME</p>
+          <img src="illustration2.png" alt="" />
+        </div>
+        <div class="text2">
+          <h2 id="title2">A deep love for minimal design, pixel & coffee</h2>
+          <p id="p3">
+            I thrive on the challenge of finding the perfect balance between
+            creativity and practicality, ensuring that every website I create
+            not only looks impressive but also provides intuitive user
+            experiences.
+          </p>
+          <div class="num">
+            <div class="exp">
+              <h3>4 years</h3>
+              <p>Experiences</p>
+            </div>
+            <div class="pro">
+              <h3>143+</h3>
+              <p>Projects</p>
+            </div>
+            <div class="cli">
+              <h3>64+</h3>
+              <p>Clients</p>
+            </div>
+            <div class="fol">
+              <h3>54k+</h3>
+              <p>Followers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="selected">
+        <div class="text4">
+            <span id="p4">SELECTED-WORKS</span>
+        <p id="span1">Partnered with inspiring collaborators and brands.</p>
+        </div>
+        <div class="works">
+          <div class="trinfolio">
+            <img src="trinfolio.png" alt="" />
+            <p class="pro-title">Trinfolio</p>
+            <p>2023</p>
+          </div>
+          <div class="trinfolio">
+            <img src="trinfolio.png" alt="" />
+            <p class="pro-title">Framer Devoloper</p>
+            <p>2023</p>
+          </div>
+          <div class="trinfolio">
+            <img src="trinfolio.png" alt="" />
+            <p class="pro-title">Devoloper Portfolio</p>
+            <p>2023</p>
+          </div>
+          <div class="trinfolio">
+            <img src="trinfolio.png" alt="" />
+            <p class="pro-title">Designer Portfolio</p>
+            <p>2023</p>
+          </div>
+        </div>
+      </section>
+     
+    </div> 
+  </body>
+</html>
