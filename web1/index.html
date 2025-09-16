@@ -10,28 +10,24 @@
     />
     <style>
       @import url("https://fonts.cdnfonts.com/css/poppins");
-      *{
+      * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
       }
-      body{
+      body {
         background-color: #fffaf5;
-        font-family: 'poppins';
-        padding:30px 100px;
-    }
-    .cont{
-          display: grid;
-          grid-template-rows: 0.09fr 1.9fr;
-          
-
+        font-family: "poppins";
+        padding: 30px 100px;
       }
-      nav{
+      .cont {
+        display: grid;
+        grid-template-rows: 0.09fr 1.9fr;
+      }
+      nav {
         font-size: 25px;
-        
-
       }
-      main{
+      main {
         width: 100%;
         display: grid;
         grid-template-columns: 0.9fr 1.1fr;
@@ -41,14 +37,14 @@
         /* padding-bottom: 80px; */
         height: 100vh;
       }
-      #illu1{
+      #illu1 {
         align-items: center;
         width: 500px;
       }
       .text {
         font-size: 22px;
       }
-      #collab{
+      #collab {
         border: 0;
         padding: 7px 15px;
         background-color: transparent;
@@ -56,100 +52,165 @@
         border-radius: 15px;
         cursor: pointer;
       }
-      #collab:hover{
+      #collab:hover {
         background-color: rgb(154, 154, 154);
         color: rgb(255, 255, 255);
       }
-      i.ri-mail-add-fill{
+      i.ri-mail-add-fill {
         color: orange;
         margin-right: 5px;
       }
-      .text *{
-        padding-bottom:15px ;
+      .text * {
+        padding-bottom: 15px;
       }
-      .partn{
+      .partn {
         width: 10pc;
       }
-      .partners{
+      .partners {
         display: flex;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 200px;
         place-content: center;
-        margin-top: 15px ;
+        margin-top: 15px;
         padding-bottom: 15px;
         border-bottom: 1px solid rgba(128, 128, 128, 0.516);
-        
       }
-      .aboutMe{
+      .aboutMe {
         margin-top: 8pc;
         padding-bottom: 4pc;
         display: grid;
         grid-template-columns: 1fr 1fr;
-                border-bottom: 1px solid rgba(128, 128, 128, 0.516);
-
+        border-bottom: 1px solid rgba(128, 128, 128, 0.516);
       }
-      #aboutMe{
+      #aboutMe {
         background-color: #f9e3cc;
         width: fit-content;
         padding: 0 5px;
         border-radius: 10px;
       }
-      .text2{
+      .text2 {
         font-size: 22px;
       }
-      #title2{
+      #title2 {
         font-size: 3.2pc;
         margin-bottom: 17px;
       }
-      #p3{
+      #p3 {
         margin-bottom: 45px;
         color: rgba(0, 0, 0, 0.737);
         font-size: 16px;
       }
-      .num{
+      .num {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
       }
-      #p4{
+      #p4 {
         background-color: #f9e3cc;
         width: fit-content;
         padding: 0 5px;
         border-radius: 10px;
         margin-right: 25pc;
-        
       }
-      .selected{
-        margin-top: 5pc;
+      .selected {
+        margin: 5pc 0;
         padding-bottom: 4pc;
-        
+        border-bottom: 1px solid rgba(128, 128, 128, 0.516);
       }
-      .works{
+      .works {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 5pc;
         place-items: center;
-        
-        row-gap:40px ;
+
+        row-gap: 40px;
       }
-      .trinfolio img{
+      .trinfolio img {
         width: 30pc;
-        
       }
-      #span1{
+      #span1 {
         font-size: 2pc;
         font-weight: bold;
         text-wrap: break-all;
         height: 0;
       }
-      .text4{
+      .text4 {
         display: grid;
         grid-template-columns: 1.4fr 0.8fr;
         row-gap: 0;
         padding-bottom: 30px;
-
       }
-      .pro-title{
+      .pro-title {
         font-weight: bold;
+      }
+      #p5 {
+        background-color: #f9e3cc;
+        width: fit-content;
+        padding: 0 5px;
+        border-radius: 10px;
+        margin-right: 25pc;
+        margin-bottom: 40px;
+      }
+      .clients {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.516);
+      }
+      .profile {
+        width: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+      }
+      .comments {
+        display: grid;
+        place-content: center;
+        padding-bottom: 4pc;
+      }
+      .comment {
+        border: 1px solid;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 0;
+        margin-bottom: 20px;
+      }
+      #illu3 {
+        width: 25pc;
+      }
+      .profileSec {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 20px;
+      }
+      .info p {
+        color: rgba(0, 0, 0, 0.495);
+        font-size: 12px;
+      }
+      #h2-5 {
+        font-size: 35px;
+      }
+      footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 4pc;
+        place-items: center;
+      }
+      #illu4 {
+        width: 28pc;
+      }
+      .text6 h2 {
+        font-size: 3.5pc;
+        
+      }
+      .collabBtn{
+        margin: 20px 0;
+        font-size: 20px;
+        
+      }
+      .links a{
+        text-decoration: none;
+        color: black;
       }
     </style>
   </head>
@@ -167,17 +228,19 @@
             user experience, I strive to create captivating websites that leave
             a lasting impression.
           </p>
-          <button id="collab"><i class="ri-mail-add-fill"></i>Let's collaborate</button>
+          <button id="collab">
+            <i class="ri-mail-add-fill"></i>Let's collaborate
+          </button>
         </div>
         <img id="illu1" src="illustration1.png" alt="" />
       </main>
-      
+
       <section class="partners">
         <img class="partn" src="images/14.png" alt="" />
         <img class="partn" src="images/15.png" alt="" />
         <img class="partn" src="images/16.png" alt="" />
       </section>
-      
+
       <section class="aboutMe">
         <div class="illu">
           <p id="aboutMe">ABOUT ME</p>
@@ -211,11 +274,11 @@
           </div>
         </div>
       </section>
-      
+
       <section class="selected">
         <div class="text4">
-            <span id="p4">SELECTED-WORKS</span>
-        <p id="span1">Partnered with inspiring collaborators and brands.</p>
+          <span id="p4">SELECTED-WORKS</span>
+          <p id="span1">Partnered with inspiring collaborators and brands.</p>
         </div>
         <div class="works">
           <div class="trinfolio">
@@ -240,7 +303,107 @@
           </div>
         </div>
       </section>
-     
-    </div> 
+      <section class="clients">
+        <div class="text5">
+          <p id="p5">MY CLIENTS</p>
+          <h2 id="h2-5">What clients say about me?</h2>
+          <img id="illu3" src="illustration3.png" alt="" />
+        </div>
+        <div class="comments">
+          <div class="comment">
+            <p>
+              I couldn't be happier. Trin took the time to understand our brand
+              and objectives, and the result was a stunning website that
+              perfectly captures our vision. His expertise in user experience
+              truly set them apart.
+            </p>
+            <div class="profileSec">
+              <img
+                class="profile"
+                src="images/profiles/notion-avatar-1758020956112.png"
+                alt=""
+              />
+              <div class="info">
+                <h4>John Smith</h4>
+                <p>FitRevolution CEO</p>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <p>
+              The attention to detail and visually captivating design exceeded
+              our expectations. Our website has received numerous compliments
+              from clients and stakeholders, and it has undoubtedly contributed
+              to our online success.
+            </p>
+            <div class="profileSec">
+              <img
+                class="profile"
+                src="images/profiles/notion-avatar-1758020956112.png"
+                alt=""
+              />
+              <div class="info">
+                <h4>Sarah Johnson</h4>
+                <p>Founder of CreativeSpark</p>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <p>
+              The design perfectly blends aesthetics with functionality,
+              providing an intuitive user experience. The team at Trin Agency
+              was highly collaborative, transparent, and efficient throughout
+              the entire process.
+            </p>
+            <div class="profileSec">
+              <img
+                class="profile"
+                src="images/profiles/notion-avatar-1758020956112.png"
+                alt=""
+              />
+              <div class="info">
+                <h4>David Williams</h4>
+                <p>CEO of Apex BuildersR</p>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <p>
+              I couldn't be happier. Trin took the time to understand our brand
+              and objectives, and the result was a stunning website that
+              perfectly captures our vision. His expertise in user experience
+              truly set them apart.
+            </p>
+            <div class="profileSec">
+              <img
+                class="profile"
+                src="images/profiles/notion-avatar-1758020956112.png"
+                alt=""
+              />
+              <div class="info">
+                <h4>John Smith</h4>
+                <p>FitRevolution CEO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="text6">
+          <h2>Time to Shine!</h2>
+          <h2>Drop us a line!</h2>
+          <button class="collabBtn" id="collab">
+            <i class="ri-mail-add-fill"></i>Let's collaborate
+          </button>
+          <br />
+          <div class="links">
+          <a href="#">Instagram</a><span>/</span><a href="#">LinkedIn</a
+          ><span>/</span><a href="#">Twitter</a></div>
+        </div>
+        <div class="illu4">
+          <img id="illu4" src="illustration4.png" alt="" />
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
