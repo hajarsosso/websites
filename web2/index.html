@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/poppins");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "poppins";
+      }
+      .cont{
+        padding: 20px 15pc;
+
+      }
+      .ul1 {
+        display: flex;
+        align-content: space-around;
+      }
+      .ul1 .li1 {
+        list-style: none;
+        margin: 0 25px;
+      }
+      .ul1 .li1 a {
+        text-decoration: none;
+        color: black;
+      }
+
+      span {
+        color: #3db996;
+      }
+      .logo {
+        font-size: 20px;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      main {
+        display: flex;
+        justify-content: space-between;
+        place-items: center;
+        font-size: 20px;
+        height: 100vh;
+      }
+      h1 {
+        margin: 15px 0;
+      }
+      #p1 {
+        font-size: 18px;
+        color: #3db996;
+      }
+      p {
+        font-size: 15px;
+      }
+      #search {
+        padding: 7px 15px;
+      }
+
+      .searchBar {
+        margin-top: 20px;
+      }
+      .sec1 {
+        display: flex;
+        justify-content: space-between;
+        place-items: center;
+        padding: 0 10px;
+        font-size: 20px;
+      }
+      h2 {
+        margin: 15px 0;
+      }
+      button {
+        border: 0;
+        background-color: #3db996;
+        color: white;
+        padding: 7px 0;
+        width: 7pc;
+        border-radius: 2px;
+      }
+      #exploreBtn {
+        margin-top: 15px;
+      }
+      #illu1 {
+        margin-left: 110px;
+      }
+      .text3 {
+        display: grid;
+        place-content: center;
+        text-align: center;
+        margin: 5pc 0;
+        padding: 0 300px;
+        font-size: 20px;
+      }
+      .sec3 {
+        display: flex;
+        justify-content: space-between;
+        gap: 5pc;
+      }
+      .card {
+        border: 1px solid;
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 15px;
+      }
+      .card-i {
+        color: #3db996;
+        background-color: #7de9ca43;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .card-title {
+        margin-bottom: 15px;
+      }
+      .sec5 {
+        display: flex;
+        gap: 5pc;
+        justify-content: center;
+        margin-bottom: 8pc;
+      }
+      .course {
+        border: 1px solid rgba(0, 0, 0, 0.242);
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .couse-pic {
+        width: 15pc;
+      }
+      .course span {
+        margin-left: 95px;
+      }
+      .course img {
+        border-radius: 10px;
+      }
+      .sec6 {
+        display: flex;
+        justify-content: space-around;
+        place-items: center;
+        font-size: 30px;
+      }
+      .sec6 img {
+        width: 20pc;
+      }
+      footer{
+        background-color: #212932;
+        padding: 70px;
+        color: white;
+        display: grid;
+        grid-template-columns: 1.5fr 0.5fr 0.5fr 0.5fr;
+        column-gap: 20px;
+      }
+      .div1{
+        width: 50%;
+      }
+
+      .div1 p{
+        margin: 20px 0;
+        font-size: 19px;
+      }
+      .pUl{
+        margin-bottom: 15px;
+        font-size: 17px;
+      }
+      .ul2{
+        list-style: none;
+        color: rgba(128, 128, 128, 0.852);
+      }
+      .ul2 li{
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+    <header>
+      <div class="logo">
+        <i class="ri-building-3-line"></i>
+        <span>Skillhub</span>
+      </div>
+      <nav>
+        <ul class="ul1">
+          <li class="li1"><a href="#">About Us</a></li>
+          <li class="li1"><a href="#">Courses</a></li>
+          <li class="li1"><a href="#">Resources</a></li>
+          <li class="li1"><a href="#">Online Learning</a></li>
+        </ul>
+      </nav>
+      <button id="logIn">Log In</button>
+    </header>
+
+    <main>
+      <div class="text">
+        <p id="p1">Grow yourself with us</p>
+        <h1>Grow your skill & get world class job's</h1>
+        <p id="p2">
+          Non-disclosure agreement seed round seed money accelerator influencer.
+          Growth hacking return nondis sure agreement seed round seed .
+        </p>
+        <div class="searchBar">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search course title"
+          />
+          <button id="searchBtn">Search</button>
+        </div>
+      </div>
+      <img id="illu1" src="images/illustration/5.png" alt="" />
+    </main>
+
+    <section class="sec1">
+      <img src="images/illustration/6.png" alt="" />
+      <div class="text2">
+        <h2>Over 1M+ Students get's job</h2>
+        <p>
+          Non-disclosure agreement seed round seed money accelerator influencer.
+          Growth hacking return nondis sure .
+        </p>
+        <p>
+          Non-disclosure agreement seed round seed money acælerator influencer.
+        </p>
+        <button id="exploreBtn">Explore More</button>
+      </div>
+    </section>
+
+    <section class="sec2">
+      <div class="text3">
+        <h2>How it works</h2>
+        <p>
+          Non-disclosure agreement seed round seed money accelerator influencer.
+        </p>
+      </div>
+      <div class="sec3">
+        <div class="cards">
+          <div class="card">
+            <div class="card-title">
+              <i class="card-i ri-file-line"></i>
+              <span>Select a course</span>
+            </div>
+            <p>
+              Non-disclosure agreement seed round seed money accelerator
+              influencer.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <i class="card-i ri-money-dollar-circle-line"></i>
+              <span>Select a course</span>
+            </div>
+            <p>
+              Non-disclosure agreement seed round seed money accelerator
+              influencer.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <i class="card-i ri-account-circle-line"></i>
+              <span>Select a course</span>
+            </div>
+            <p>
+              Non-disclosure agreement seed round seed money accelerator
+              influencer.
+            </p>
+          </div>
+        </div>
+        <img src="images/illustration/7.png" alt="" />
+      </div>
+    </section>
+
+    <section class="sec4">
+      <div class="text3">
+        <h2>Our popular courses</h2>
+        <p>
+          Non-disclosure agreement seed round seed money accelerator influencer.
+        </p>
+      </div>
+
+      <div class="sec5">
+        <div class="course">
+          <img
+            class="couse-pic"
+            src="images/courses/Get-the-Most-Fancied-Web-Development-Services-min-scaled-2877767772.jpg"
+            alt=""
+          />
+          <h4>Web devolopment</h4>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <span>$119.99</span>
+          <p><i class="ri-group-line"></i>25K+ Students</p>
+        </div>
+
+        <div class="course">
+          <img
+            class="couse-pic"
+            src="images/courses/graphic-design-2622875456.png"
+            alt=""
+          />
+          <h4>Graphic Design</h4>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <span>$119.99</span>
+          <p><i class="ri-group-line"></i>25K+ Students</p>
+        </div>
+
+        <div class="course">
+          <img
+            class="couse-pic"
+            src="images/courses/OIP-3785530825.jpeg"
+            alt=""
+          />
+          <h4>UI/UX Design</h4>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <span>$119.99</span>
+          <p><i class="ri-group-line"></i>25K+ Students</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec6">
+      <img src="images/illustration/8.png" alt="" />
+      <div class="text4">
+        <h2>Do you have any query?</h2>
+        <p>Non-disclosure agreement seed.</p>
+        <div class="searchBar">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search course title"
+          />
+          <button id="searchBtn">Search</button>
+        </div>
+      </div>
+    </section>
+</div>
+    <footer>
+
+      
+
+
+        <div class="div1">
+          <i class="ri-building-3-line"></i>
+          <span>Skillhub</span>
+          <p>
+            Non-disclosure agreement seed round seed money accelerator
+            influencer. Growth hacking return nondis sure agreement .
+          </p>
+          <i class="ri-facebook-circle-line"></i>
+          <i class="ri-twitter-line"></i>
+          <i class="ri-instagram-line"></i>
+          <i class="ri-linkedin-box-line"></i>
+        </div>
+
+        <div class="div2">
+          <p class="pUl">About Product</p>
+          <div class="aboutProduct">
+          <ul class="ul2">
+            <li>Patch</li>
+            <li>Updates</li>
+            <li>Beta test</li>
+            <li>Pricing product</li>
+          </ul>
+        </div>
+        </div>
+
+        <div class="div3">
+          <p class="pUl">Help and Solutions</p>
+
+          <div class="aboutProduct">
+          
+          <ul class="ul2">
+            <li>Talk to support</li>
+            <li>Support docs</li>
+            <li>System status</li>
+          </ul>
+        </div>
+        </div>
+
+        <div class="div4">
+          <p class="pUl">Support</p>
+          <div class="aboutProduct">
+          
+          <ul class="ul2">
+            <li>Help center</li>
+            <li>Account information</li>
+            <li>About</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        </div>
+
+      
+    </footer>
+  </body>
+</html>
