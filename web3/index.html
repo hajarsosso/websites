@@ -28,14 +28,14 @@
         font-size: 25px;
         font-weight: 600;
       }
-      ul {
+      #ul1 {
         display: flex;
         list-style: none;
       }
-      ul li {
+      #ul1 li {
         margin-right: 25px;
       }
-      ul li button {
+      #ul1 li button {
         border: 0;
         padding: 5px 8px;
         background-color: black;
@@ -151,7 +151,7 @@
         background-color: #bffe70;
         padding: 0 10px;
       }
-      .sec6{
+      .sec6 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 10pc;
@@ -160,16 +160,65 @@
         place-items: center;
         gap: 30px;
       }
-      .text3{
+      .text3 {
         font-size: 25px;
         width: 70%;
       }
-      #phoneApp{
+      #phoneApp {
         width: 20pc;
         cursor: pointer;
       }
       .sec6 img {
         width: 23pc;
+      }
+      .sec7 {
+        text-align: center;
+        margin: 15pc 0;
+        font-size: 30px;
+        padding: 0 15pc;
+
+      }
+      #email {
+        border: 0;
+        padding: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.441);
+        /* color: white; */
+        border-radius: 5px;
+        margin-top: 20px;
+        font-size: 15px;
+      }
+      footer{
+        display: grid;
+        grid-template-columns: 1fr 0.3fr 0.3fr 0.3fr;
+        background-color: black;
+        color: white;
+        padding: 90px 50px;
+        
+      }
+      .div1{
+        width: 50%;
+        font-size: 20px;
+      }
+      .div1 p{
+        margin: 15px 0;
+      }
+      .div1 i{
+        background-color: #bffe70;
+        color: black;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 3px;
+        margin-right: 5px;
+      }
+      #ul2{
+        list-style: none;
+        padding:  8px 0;
+        font-size: 14px;
+      }
+      #ul2 li{
+        padding:  8px 0;
+        color: gray;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -180,7 +229,7 @@
         <span>FASHION</span>
       </div>
       <nav>
-        <ul>
+        <ul id="ul1">
           <li>CATALOGUE</li>
           <li>FASHION</li>
           <li>FAVOURITE</li>
@@ -283,9 +332,63 @@
           Get 30% off for first transaction using Rondovision mobile app for
           now.
         </p>
-        <img id="phoneApp" src="App-Store-Logo-PNG-HD-Image-2170006634.png" alt="" />
+        <img
+          id="phoneApp"
+          src="App-Store-Logo-PNG-HD-Image-2170006634.png"
+          alt=""
+        />
       </div>
-      <img src="Untitled design(3).png" alt="">
+      <img src="Untitled design(3).png" alt="" />
     </section>
+
+    <section class="sec7">
+      <h2>JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO</h2>
+      <p>Type your email down below and be young wild generation</p>
+      <div class="email">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Add your email here "
+        />
+        <button id="shopBtn">SEND</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="div1">
+        <h2>FASHION</h2>
+        <p>Complete your style with awesome clothes from us.</p>
+        <i class="ri-facebook-fill"></i>
+        <i class="ri-instagram-line"></i>
+        <i class="ri-twitter-fill"></i>
+        <i class="ri-linkedin-fill"></i>
+      </div>
+      <div class="div2">
+        <p>Company</p>
+        <ul id="ul2">
+          <li>About</li>
+          <li>Contact us</li>
+          <li>Support</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+      <div class="div3">
+        <p>Quick Link</p>
+        <ul id="ul2">
+          <li>Share Location</li>
+          <li>Orders Tracking</li>
+          <li>Size Guide</li>
+          <li>FAQs</li>
+        </ul>
+      </div>
+      <div class="div4">
+        <p>Legal</p>
+        <ul id="ul2">
+          <li>Terms & conditions</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
