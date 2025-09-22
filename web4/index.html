@@ -4,10 +4,128 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    
+<link href=" https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css " rel="stylesheet">
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/poppins");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "poppins";
+        margin: 30px 8pc ;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        place-items: center;
+        
+        margin-bottom: 15px;
+      }
+      .logo {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        font-size: 25px;
+        font-weight: bold;
+        color: #0db75f;
+      }
+      .logo img {
+        width: 45px;
+      }
+      header nav ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        font-size: 13px;
+      }
+      header nav ul li{
+        cursor: pointer;
+        font-weight: bold;
+      }
+      header .btn button{
+        border: 0;
+        padding: 10px;
+        background-color: transparent;
+        border: 1px solid #0db75f;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+      header .btn button:hover{
+        background-color: #0db75f;
+        color: white;
+      }
+      main section h4{
+        color: #0db75f;
+        border: 1px solid #0db75f;
+        width: fit-content;
+        border-radius: 50%;
+        padding: 3px 5px;
+        font-weight: 500;
+        font-size: 17px;
+      }
+      main section h1 span{
+        color: #0db75f;
+      }
+      main section p{
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.707);
+        width: 80%;
+        margin-top: 5px;
+      }
+      main section .buttons{
+        margin-top: 15px;
+      }
+      .btnGreen{
+        border: 0;
+        padding: 10px;
+        background-color: #0db75f;
+        color: white;
+        border-radius: 7px;
+        cursor: pointer;
+        margin: 0 15px 0 0;
+      }
+      .buttons a{
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      .buttons i{
+        color: #0db75f;
+      }
+      main{
+        display: flex;
+        justify-content: space-between;
+        margin: 3pc 0;
+        
+        
+      }
+      main .text{
+        font-size: 30px;
+        width: 50%;
+        place-content: center;
+      }
+      main img{
+        height: 30pc;
+        width: auto;
+      }
+      .sec2{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3,1fr);
+        place-items: center;
+      }
+      .sec2 div{
+        /* margin:0 50px; */
+        padding:0 50px;
+      }
+      .sec2 .border{
+        border-right: 1px solid #0db75f;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -23,43 +141,44 @@
           <li>Testimonial</li>
         </ul>
       </nav>
-      <button>Download CV</button>
+      <div class="btn">
+        <button>Download CV</button>
+      </div>
     </header>
 
-    <main>
+   <main>
       <section class="text">
-        <p>Welcome</p>
-        <h1>I have Creative Design Experience</h1>
+        <h4>Welcome</h4>
+        <h1>I have <span>Creative Design</span> Experience</h1>
         <p>
           I'm Tanvir, a creative Product Designer. I've been helping businesses
           to solve their problems with my design for 2 years.
         </p>
         <div class="buttons">
-          <button>Contact Me</button>
+          <button class="btnGreen">Contact Me</button>
           <a href="#"
-            >View Portfolio <i class="ri-arrow-right-up-long-line"></i
-          ></a>
+            >View Portfolio<i class="ri-arrow-right-up-long-line"></i> </a>
         </div>
       </section>
       <img src="images/pic1.png" alt="" />
     </main>
 
-    <section class="sec2">
-      <div class="clients">
-        <h2>80+</h2>
+      <section class="sec2">
+      <div class="clients border">
+        <h2 class="nmbr">80+</h2>
         <p>Satisfied clients</p>
       </div>
-      <div class="projects">
-        <h2>200+</h2>
+      <div class="projects border">
+        <h2 class="nmbr">200+</h2>
         <p>Projects completed</p>
       </div>
       <div class="reviews">
-        <h2>99+</h2>
+        <h2 class="nmbr">99+</h2>
         <p>Reviews given</p>
       </div>
     </section>
 
-    <section class="sec3">
+    <!--<section class="sec3">
       <div class="text">
         <p>My Skills</p>
         <h2>Why Hire Me For Your Next Project?</h2>
@@ -207,6 +326,6 @@
             <i class="ri-linkedin-fill"></i>
             <i class="ri-instagram-fill"></i>
         </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
