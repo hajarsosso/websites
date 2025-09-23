@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
-<link href=" https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css " rel="stylesheet">
+
+    <link
+      href=" https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css "
+      rel="stylesheet"
+    />
     <style>
       @import url("https://fonts.cdnfonts.com/css/poppins");
       * {
@@ -15,13 +18,13 @@
       }
       body {
         font-family: "poppins";
-        margin: 30px 8pc ;
+        margin: 30px 8pc;
       }
       header {
         display: flex;
         justify-content: space-between;
         place-items: center;
-        
+
         margin-bottom: 15px;
       }
       .logo {
@@ -41,11 +44,11 @@
         gap: 50px;
         font-size: 13px;
       }
-      header nav ul li{
+      header nav ul li {
         cursor: pointer;
         font-weight: bold;
       }
-      header .btn button{
+      header .btn button {
         border: 0;
         padding: 10px;
         background-color: transparent;
@@ -53,11 +56,12 @@
         border-radius: 7px;
         cursor: pointer;
       }
-      header .btn button:hover{
+      header .btn button:hover {
         background-color: #0db75f;
         color: white;
       }
-      main section h4{
+      main section h4,
+      .sec3 .text h4 {
         color: #0db75f;
         border: 1px solid #0db75f;
         width: fit-content;
@@ -66,19 +70,22 @@
         font-weight: 500;
         font-size: 17px;
       }
-      main section h1 span{
+      main section h1 span,
+      .sec3 span {
         color: #0db75f;
       }
-      main section p{
+      main section p,
+      .sec3 p {
         font-size: 13px;
         color: rgba(0, 0, 0, 0.707);
         width: 80%;
         margin-top: 5px;
       }
-      main section .buttons{
+      main section .buttons,
+      .sec3 button {
         margin-top: 15px;
       }
-      .btnGreen{
+      .btnGreen {
         border: 0;
         padding: 10px;
         background-color: #0db75f;
@@ -87,44 +94,83 @@
         cursor: pointer;
         margin: 0 15px 0 0;
       }
-      .buttons a{
+      .buttons a {
         color: black;
         text-decoration: none;
         cursor: pointer;
         font-size: 14px;
       }
-      .buttons i{
+      .buttons i {
         color: #0db75f;
       }
-      main{
+      main {
         display: flex;
         justify-content: space-between;
-        margin: 3pc 0;
-        
-        
+        margin: 3pc 0 0 0;
       }
-      main .text{
+      .text {
         font-size: 30px;
         width: 50%;
         place-content: center;
       }
-      main img{
+      main img {
         height: 30pc;
         width: auto;
       }
-      .sec2{
-        display: grid;
+      .sec2 {
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        margin: 7pc 0 9pc 0;
+      }
+      .sec2 h2 {
+        color: #0db75f;
+      }
+      .sec2 div {
         width: 100%;
-        grid-template-columns: repeat(3,1fr);
-        place-items: center;
+        text-align: center;
       }
-      .sec2 div{
-        /* margin:0 50px; */
-        padding:0 50px;
-      }
-      .sec2 .border{
+      .sec2 .border {
         border-right: 1px solid #0db75f;
+        border-left: 1px solid #0db75f;
       }
+      .sec3 {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        
+      }
+      .sec3 .text {
+        width: 45%;
+      }
+      .side {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        
+      }
+      .left{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .right{
+        display: flex;
+        align-items: center;
+      }
+      .box i{
+        color: #0db75f;
+        font-size: 19px;
+      }
+      .box{
+        width: 300px;
+      
+      background: rgba(212, 240, 215, 0.358);
+      padding: 20px;
+      border-radius: 8px;
+      }
+      
     </style>
   </head>
   <body>
@@ -146,7 +192,7 @@
       </div>
     </header>
 
-   <main>
+    <main>
       <section class="text">
         <h4>Welcome</h4>
         <h1>I have <span>Creative Design</span> Experience</h1>
@@ -157,14 +203,15 @@
         <div class="buttons">
           <button class="btnGreen">Contact Me</button>
           <a href="#"
-            >View Portfolio<i class="ri-arrow-right-up-long-line"></i> </a>
+            >View Portfolio<i class="ri-arrow-right-up-long-line"></i>
+          </a>
         </div>
       </section>
       <img src="images/pic1.png" alt="" />
     </main>
 
-      <section class="sec2">
-      <div class="clients border">
+    <section class="sec2">
+      <div class="clients">
         <h2 class="nmbr">80+</h2>
         <p>Satisfied clients</p>
       </div>
@@ -178,36 +225,40 @@
       </div>
     </section>
 
-    <!--<section class="sec3">
+    <section class="sec3">
       <div class="text">
-        <p>My Skills</p>
-        <h2>Why Hire Me For Your Next Project?</h2>
+        <h4>My Skills</h4>
+        <h2>Why Hire Me For Your Next <span> Project?</span></h2>
         <p>
           I'm specialist in IJI/IJX Designe. My passion is designing & solving
           problems through user experience and research.
         </p>
-        <button>Hire Me</button>
+        <button class="btnGreen">Hire Me</button>
       </div>
       <div class="side">
-        <div class="visual">
-          <i class="ri-vip-diamond-line"></i>
-          <h4>Visual Design</h4>
-          <p>Create user interface design with unique & modern ideas</p>
+        <div class="left">
+          <div class="box">
+            <i class="ri-vip-diamond-line"></i>
+            <h4>Visual Design</h4>
+            <p>Create user interface design with unique & modern ideas</p>
+          </div>
+          <div class="box">
+            <i class="ri-graduation-cap-line"></i>
+            <h4>UX Research</h4>
+            <p>Create digital user products with updated ideas</p>
+          </div>
         </div>
-        <div class="UX">
-          <i class="ri-graduation-cap-line"></i>
-          <h4>UX Research</h4>
-          <p>Create digital user products with updated ideas</p>
-        </div>
-        <div class="UX">
-          <i class="ri-pulse-line"></i>
-          <h4>Design Prototype</h4>
-          <p>Create advance design prototype with Figma apps.</p>
+        <div class="right">
+          <div class="box">
+            <i class="ri-pulse-line"></i>
+            <h4>Design Prototype</h4>
+            <p>Create advance design prototype with Figma apps.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="sec4">
+    <!-- <section class="sec4">
       <div class="text">
         <p>Portfolio</p>
         <h2>My Creative Works Latest Projects</h2>
