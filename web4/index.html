@@ -61,7 +61,10 @@
         color: white;
       }
       main section h4,
-      .sec3 .text h4 {
+      .sec3 .text h4,
+      .sec4 h4,
+      .sec5 h4,
+      .sec6 h4 {
         color: #0db75f;
         border: 1px solid #0db75f;
         width: fit-content;
@@ -71,18 +74,25 @@
         font-size: 17px;
       }
       main section h1 span,
-      .sec3 span {
+      .sec3 span,
+      .sec4 span,
+      .sec5 span,
+      .sec6 span {
         color: #0db75f;
       }
       main section p,
-      .sec3 p {
+      .sec3 p, 
+      .sec4 p,
+      .sec5 p,
+      .sec6 p {
         font-size: 13px;
         color: rgba(0, 0, 0, 0.707);
-        width: 80%;
+        /* width: 80%; */
         margin-top: 5px;
       }
       main section .buttons,
-      .sec3 button {
+      .sec3 button,
+      .sec4 button {
         margin-top: 15px;
       }
       .btnGreen {
@@ -93,6 +103,11 @@
         border-radius: 7px;
         cursor: pointer;
         margin: 0 15px 0 0;
+      }
+      .btnGreen:hover{
+        background-color: white;
+        border:1px solid #0db75f;
+        color: #0db75f;
       }
       .buttons a {
         color: black;
@@ -123,6 +138,7 @@
         justify-content: space-between;
         margin: 7pc 0 9pc 0;
       }
+      
       .sec2 h2 {
         color: #0db75f;
       }
@@ -138,9 +154,9 @@
         display: flex;
         justify-content: space-between;
         gap: 30px;
-        
+        margin: 7pc 0;
       }
-      .sec3 .text {
+      .sec3 .text, .sec4 .text {
         width: 45%;
       }
       .side {
@@ -170,7 +186,109 @@
       padding: 20px;
       border-radius: 8px;
       }
+      .sec4{
+        display: flex;
+
+      }
+      .review i{
+        color: gold;
+      }
+      .sec5 .text{
+        width: 45%;
+      }
+      .sec5{
+        margin: 7pc 0;
+      }
+      .sec5 img{
+        width: 40px;
+        border-radius: 50%;
+      }
+      .review{
+        box-shadow: 0 0 10px rgb(228, 228, 228);
+        padding: 20px;
+        border-radius: 10px;
+        
+      }
+      .reviews{
+        margin-top: 2pc;
+        display: flex;
+        gap: 30px;
+      }
+      .profile{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-top: 1pc;
+      }
+      .sec6 .text1{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 2pc;
+      }
+      .sec6 h4{
+        margin: auto;
+      }
+      .form i{
+        background-color: #0db75f;
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+        font-size: 20px;
+        
+      }
+      .form{
+        display: flex;
+        justify-content: space-around;
+      }
+      .info > div{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(228, 228, 228, 0.633);
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
       
+      form input{
+        border: 0;
+        border: 1px solid rgba(190, 190, 190, 0.695);
+        padding:20px 40px 20px 10px;
+        border-radius: 5px;
+      
+      }
+      form > div{
+        display: flex;
+        gap: 10px;
+        margin-bottom:20px ;
+        
+      }
+      textarea{
+        border: 0;
+        border: 1px solid rgba(190, 190, 190, 0.695);
+        width: 100%;
+        height: 80px;
+        margin-bottom: 1pc;
+        padding: 10px;
+        font-family: 'poppins';
+        font-size: 12px;
+      }
+      .sec6{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.244);
+        padding-bottom: 5pc;
+        margin-bottom: 2pc;
+      }
+      footer{
+        display: flex;
+        justify-content: space-between;
+      }
+      footer i{
+        color: white;
+        background-color: #0db75f;
+        padding: 3px;
+        border-radius: 5px;
+      }
     </style>
   </head>
   <body>
@@ -219,7 +337,7 @@
         <h2 class="nmbr">200+</h2>
         <p>Projects completed</p>
       </div>
-      <div class="reviews">
+      <div class="clients">
         <h2 class="nmbr">99+</h2>
         <p>Reviews given</p>
       </div>
@@ -258,23 +376,46 @@
       </div>
     </section>
 
-    <!-- <section class="sec4">
+     <section class="sec4">
       <div class="text">
-        <p>Portfolio</p>
-        <h2>My Creative Works Latest Projects</h2>
+        <h4>Portfolio</h4>
+        <h2>My Creative Works Latest <span>Projects</span></h2>
         <p>
           I have selected and mentioned here some of my latest projects to share
           with you.
         </p>
-        <button>Show More</button>
+        <button class="btnGreen">Show More</button>
       </div>
+      <img src="images/website.png" alt="" />
+      <img src="images/website.png" alt="" />
       <img src="images/website.png" alt="" />
     </section>
 
-    <section class="sec5">
+   <section class="sec5">
       <div class="text">
-        <p>Reviews</p>
-        <h2>Our Customer Say Something About Us</h2>
+        <h4>Reviews</h4>
+        <h2>Our Customer Say Something <span>About Us</span></h2>
+      </div>
+      <div class="reviews">
+        <div class="review">
+        <div class="stars">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+        </div>
+        <p>
+          We will also facilitate the business marketing of these products with
+          our SEO experts so that they become a ready to use website & help sell
+          product from company
+        </p>
+        <div class="profile">
+          <img src="images/review.jpeg" alt="" />
+          <div class="info-profile">
+            <h5>Amir Uddin</h5>
+          <p>Devoloper</p>
+          </div>
+        </div>
       </div>
       <div class="review">
         <div class="stars">
@@ -290,34 +431,19 @@
         </p>
         <div class="profile">
           <img src="images/review.jpeg" alt="" />
-          <h5>Amir Uddin</h5>
-          <p>UX Design</p>
+          <div class="info-profile">
+            <h5>Amir Uddin</h5>
+            <p>Designer</p>
+          </div>
         </div>
       </div>
-      <div class="review">
-        <div class="stars">
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-fill"></i>
-          <i class="ri-star-fill"></i>
-        </div>
-        <p>
-          We will also facilitate the business marketing of these products with
-          our SEO experts so that they become a ready to use website & help sell
-          product from company
-        </p>
-        <div class="profile">
-          <img src="images/review.jpeg" alt="" />
-          <h5>Amir Uddin</h5>
-          <p>UX Design</p>
-        </div>
       </div>
     </section>
 
-    <section class="sec6">
-      <div class="text">
-        <p>Contact</p>
-        <h2>Let's Discuss Your Project</h2>
+     <section class="sec6">
+      <div class="text1">
+        <h4>Contact</h4>
+        <h2>Let's Discuss Your <span>Project</span></h2>
         <p>
           Let's make something new, different and more meaningful or make thing
           more visual or conceptual
@@ -329,21 +455,21 @@
             <i class="ri-phone-line"></i>
             <div class="text-info">
               <p>Call me</p>
-              <p>+8801613968687</p>
+              <h5>+8801613968687</h5>
             </div>
           </div>
           <div class="email">
             <i class="ri-mail-line"></i>
             <div class="text-info">
               <p>Email me</p>
-              <p>ahmedtanvir8687@gmail.com</p>
+              <h5>ahmedtanvir8687@gmail.com</h5>
             </div>
           </div>
-          <div class="phone">
+          <div class="address">
             <i class="ri-map-pin-line"></i>
             <div class="text-info">
               <p>Address</p>
-              <p>Zakigonj, Sylhet, Bangladesh.</p>
+              <h5>Zakigonj, Sylhet, Bangladesh.</h5>
             </div>
           </div>
         </div>
@@ -361,9 +487,9 @@
             <input type="text" name="phone" id="phone" placeholder="Phone number">
             <input type="text" name="budget" id="budget" placeholder="Budget">
           </div>
-          <textarea name="msg" id="msg"></textarea>
+          <textarea name="msg" id="msg" placeholder="message"></textarea>
           <br>
-          <button type="submit">Submit Message</button>
+          <button class="btnGreen" type="submit">Submit Message</button>
         </form>
       </div>
     </section>
@@ -377,6 +503,6 @@
             <i class="ri-linkedin-fill"></i>
             <i class="ri-instagram-fill"></i>
         </div>
-    </footer> -->
+    </footer>
   </body>
 </html>
