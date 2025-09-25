@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href=" https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css "
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/poppins");
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body{
+        font-family: 'poppins';
+    }
+    .cont{
+        color: white;
+        background: linear-gradient(to bottom right,#0c088f,#029d7f);
+        padding: 3pc 5pc;
+        /* height: 100vh; */
+    } 
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5pc;
+      }
+        nav ul{
+            display: flex;
+        list-style: none;
+        gap: 50px;
+        font-size: 17px;
+    }
+    nav ul li{
+          cursor: pointer;
+
+      }
+      nav button{
+        border: 0;
+        padding: 3px 7px;
+        font-family: 'poppins';
+        background-color: #01bc9f;
+        border-radius: 18px;
+        color: white;
+      }
+      nav button:hover{
+        color: #01bc9f;
+        background-color: white;
+        font-weight: 600;
+      }
+      .logo{
+        font-size: 20px;
+          cursor: pointer;
+
+      }
+      main{
+        display: flex;
+        justify-content: space-between;
+        place-items: center;
+      }
+      main .text{
+        width: 60%;
+        font-size: 35px;
+      }
+      main h1{
+        color: #02fed6;
+      }
+      main p{
+        font-size: 20px;
+        font-weight: 300;
+        width: 77%;
+        margin: 20px 0;
+      }
+      main button {
+        border: 0;
+        padding: 10px;
+        background-color: transparent;
+        border:1px solid rgba(255, 255, 255, 0.432);
+        color: white;
+        font-family: 'poppins';
+        font-size: 18px;
+      }
+      main button:hover{
+        background-color: #01bc9f;
+        
+      }
+      .sec2, .sec3{
+        display: grid;
+        place-items: center;
+        padding: 3pc 0;
+        background-color: #f5f5f5;
+      }
+      h3{
+        font-weight: 300;
+        color: gray;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.389);
+        margin-bottom: 2pc;
+        font-size: 22px;
+      }
+      .sec2 img{
+        width: 10pc;
+        cursor: pointer;
+      }
+      .sec2 .partners-logos{
+        display: flex;
+        gap: 50px;
+      }
+      .sec3{
+        background-color: white;
+      }
+      .tasks{
+        display: flex;
+        text-align: center;
+        /* margin-top: 3pc ; */
+        width: 80%;
+        gap: 50px;
+      }
+      .sec3 i{
+        font-size: 3.5pc;
+        color: gray;
+      }
+      .sec3 h4{
+        margin: 13px 0 5px 0;
+        font-size: 18px;
+      }
+      .sec3 p{
+        /* color: gray; */
+        font-weight: 300;
+        padding-bottom: 20px;
+      }
+      .sec3 a{
+        text-decoration: none;
+        
+    }
+    .sec4{
+        background-color: #09017c;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding: 3pc;
+    }
+    .sec4 h2{
+        font-size: 50px;
+        color: white;
+        width: 70%;
+        margin-bottom: 2pc;
+    }
+    .sec4 #span1{
+        color: #02fed6;
+    }
+    .cards{
+        display: flex;
+        gap: 40px;
+        /* padding: 20px; */
+        /* margin: 0 20px; */
+        justify-content: space-between;
+        margin: 1pc 7pc;
+    }
+    .cards >div{
+        background-color: white;
+        /* margin: 0 5pc; */
+        width: fit-content;
+    }
+    .cards .text{
+        padding: 35px ;
+    }
+    .cards p span {
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .cards p{
+        margin: 1pc 0;
+        
+    }
+    .sec4 h4{
+        border-bottom: 1px solid grey;
+        padding: 1pc 0;
+    }
+    .sec4 .text button{
+        border: 0;
+        padding: 10px 50px;
+        background-color: black;
+        color: white;
+        font-family: 'poppins';
+    }
+    .sec4 h3{
+      color: white;
+      border-bottom:1px solid rgba(255, 255, 255, 0.61);
+    }
+    .sec5{
+      display: grid;
+      place-items: center;
+      padding: 4pc 0;
+      background-color: #f7f7f7;
+    }
+    .sec5 img{
+      width: 15pc;
+      margin-bottom: 15px;
+    }
+    .sec5 .team{
+      display: flex;
+      justify-content: space-between;
+      gap: 10pc;
+      margin-top: 2pc;
+    }
+    .member{
+      display: grid;
+      place-items: center;
+    }
+    .member h4{
+      color: #8180e4;
+    }
+    .member p{
+      color: grey;
+    }
+    .sec6{
+      display: flex;
+      flex-direction: column;
+      place-items: center;
+      margin: 4pc 0;
+    }
+    .sec6 i{
+      font-size: 7pc;
+      color: gray;
+
+    }
+    .sec6 h2{
+      font-size: 4pc;
+      text-align: center;
+      margin-bottom: 1pc 0;
+      width: 50%;
+    }
+    .sec6 button{
+      border: 0;
+      padding: 10px 20px;
+      background-color: transparent;
+      border: 1px solid rgba(0, 0, 0, 0.286);
+
+    }
+    .sec6 button:hover{
+      color: white;
+      background-color: black;
+    }
+    footer{
+      background-color: #09017c;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 5pc 30px;
+      /* font-size: 18px; */
+      font-weight:300;
+    }
+    footer ul{
+      list-style: none;
+    }
+    footer ul li{
+      cursor: pointer;
+      margin: 15px 0;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <header>
+        <div class="logo">
+          <i class="ri-code-s-slash-line"></i>
+          <span>DEV SPACE</span>
+        </div>
+        <nav>
+          <ul>
+            <li>What we do</li>
+            <li>How we work</li>
+            <li>Pricing</li>
+            <li>Our team</li>
+            <button>Download</button>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="text">
+          <h1>Design UI <br>App Development Consultant Services</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
+            pariatur? Lorem ipsum dolor 
+          </p>
+          <button>START A PROJECT TODAY</button>
+        </div>
+        <img src="illustration.png" alt="" />
+      </main>
+    </div>
+ 
+    <section class="sec2">
+      <h3>Trusted By The Best Clients</h3>
+      <div class="partners-logos">
+        <img src="images/partners/23.png" alt="" />
+        <img src="images/partners/24.png" alt="" />
+        <img src="images/partners/25.png" alt="" />
+        <img src="images/partners/26.png" alt="" />
+        <img src="images/partners/27.png" alt="" />
+        <img src="images/partners/28.png" alt="" />
+      </div>
+    </section>
+
+   <section class="sec3">
+      <h3>What We Do</h3>
+      <div class="tasks">
+        <div class="design">
+          <i class="ri-magic-line"></i>
+          <h4>Interface Design</h4>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="web">
+          <i class="ri-quill-pen-line"></i>
+          <h4>Web Application</h4>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="software">
+          <i class="ri-file-code-line"></i>
+          <h4>Software Development</h4>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+     <section class="sec4">
+      <h3>How We Work</h3>
+      <h2>
+        We build <span id="span1">reliable infrastructure,</span> use comprehensive in-house tools.
+      </h2>
+      <div class="cards">
+        <div class="pro">
+          <h4>PRO</h4>
+          <div class="text">
+            <p><span>$2500</span>/ year</p>
+          <p>
+            <b>10</b> billable hours per month Billable hourly rate of <b>$300</b> after the 10
+            hours aro 24/7/365 m-call and 99.9% SLA Communication via ticketing
+            system and e-mail.
+          </p>
+          <button>Contact Us</button>
+          </div>
+        </div>
+        <div class="premium">
+          <h4>PREMIUM</h4>
+          <div class="text">
+            <p><span>$5000</span>/ year</p>
+          <p>
+            <b>10</b> billable hours per month Billable hourly rate of <b>$300</b> after the 10
+            hours aro 24/7/365 m-call and 99.9% SLA Communication via ticketing
+            system and e-mail.
+          </p>
+          <button>Contact Us</button>
+          </div>
+        </div>
+        <div class="entreprise">
+          <h4>ENTREPRISE</h4>
+          <div class="text">
+            <p><span>$15000</span>/ year</p>
+          <p>
+            <b>10</b> billable hours per month Billable hourly rate of <b>$300</b> after the 10
+            hours aro 24/7/365 m-call and 99.9% SLA Communication via ticketing
+            system and e-mail.
+          </p>
+          <button>Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec5">
+        <h3>Meet Our Team</h3>
+        <div class="team">
+            <div class="member">
+                <img src="images/team/22.png" alt="">
+                <h4>John Doe</h4>
+                <p>DevOps</p>
+            </div>
+            <div class="member">
+                <img src="images/team/23.png" alt="">
+                <h4>Tinh Nguyen</h4>
+                <p>Designer</p>
+            </div>
+            <div class="member">
+                <img src="images/team/24.png" alt="">
+                <h4>Neck Oto</h4>
+                <p>Devoloper</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec6">
+        <h3>We love Open Source</h3>
+       <i class="ri-flag-line"></i>
+        <h2>We're making Open Source Software</h2>
+        <button>Follow us on Github</button>
+    </section>
+
+   <footer>
+        <ul>
+            <h4>Services</h4>
+            <li>DevOps</li>
+            <li>Devolopment</li>
+            <li>Consultant</li>
+        </ul>
+        <ul>
+            <h4>Clients</h4>
+            <li>Lapa Ninja</li>
+            <li>Noty lM</li>
+            <li>Yeo Space</li>
+        </ul>
+        <ul>
+            <h4>Contact Us</h4>
+            <li>tinh@lapaninja</li>
+            <li>Twitter</li>
+            <li>Github</li>
+        </ul>
+        <ul>
+            <h4>Copyright</h4>
+            <li>Free Streaming Icons</li>
+            <li>Buy illustration Pack by Nimarti</li>
+        </ul>
+    </footer>
+
+  </body>
+</html>
