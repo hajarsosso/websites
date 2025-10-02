@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href=" https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css "
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/poppins");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "poppins";
+        /* padding:3pc 5pc; */
+        background-color: white;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+      }
+      header nav ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+      }
+      header a{
+        text-decoration: none;
+        color: black;
+      }
+      .firstContainer {
+        padding: 2pc 5pc;
+      }
+
+      main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3pc 0;
+      }
+      main img {
+        width: 45pc;
+        height: auto;
+      }
+      main .text {
+        font-size: 15px;
+        width: 35%;
+      }
+      main .text #paragraph {
+        margin: 15px 0;
+      }
+      .greenBtn {
+        border: 0;
+        padding: 10px 30px;
+        background-color: #34bf49;
+        color: white;
+        border-radius: 20px;
+        margin-top: 10px;
+        border: 1px solid #34bf49;
+      }
+      .greenBtn:hover {
+        background-color: white;
+        border: 1px solid #34bf49;
+        color: #34bf49;
+      }
+      .sec1 {
+        padding: 3pc 5pc;
+        background-color: #f3f4f4;
+      }
+
+      .sec1 .cont {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        padding: 3pc;
+      }
+      .sec1 .cont img {
+        width: 25pc;
+      }
+      .sec1 .cont .text {
+        font-size: 15px;
+        width: 38%;
+      }
+      .parSec1 {
+        margin: 25px 0;
+      }
+      .features {
+        display: flex;
+      }
+      .feature {
+        margin: 5pc;
+      }
+      .feature i {
+        font-size: 60px;
+        color: #34bf49;
+      }
+      .whyUs {
+        margin: 5pc;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .whyUs img {
+        width: 35pc;
+      }
+      .whyUs .text {
+        font-size: 15px;
+        width: 38%;
+      }
+      .whyUs .text p {
+        margin: 10px 0;
+      }
+      .whyUs .numbers {
+        display: flex;
+        justify-content: space-between;
+      }
+      .whyUs .number h3 {
+        font-size: 30px;
+        font-weight: 300;
+        margin-top: 10px;
+      }
+      .whyUs .line {
+        width: 19px;
+        height: 2px;
+        background-color: #34bf499a;
+      }
+      .sec2 {
+        display: grid;
+        place-items: center;
+        padding: 3pc 5pc;
+      }
+      .blogs {
+        display: flex;
+        margin: 2pc;
+      }
+      .blogs .imgMain {
+        width: 25pc;
+        display: block;
+        margin: 0 auto;
+      }
+      .blogs .team {
+        width: 50px;
+        border-radius: 50%;
+      }
+      .blogs .textSec2 {
+        margin: 1pc 4pc 1pc 0;
+      }
+      .blogs .profile {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .blog-content {
+        margin: 1pc;
+      }
+      .blog-content .date {
+        color: rgba(0, 0, 0, 0.562);
+      }
+      .sec3 {
+        background-color: #f3f4f4;
+        display: grid;
+      }
+      
+      .priceTable {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 3pc;
+      }
+      .price{
+        background-color: white;
+        padding: 4pc ;
+        display: grid;
+        place-items: center;
+        font-size: 20px;
+        box-shadow: 0 0 20px rgb(217, 217, 217);
+      }
+      .sec3 .text{
+        display: grid;
+        place-items: center;
+        margin: 3pc 0;
+
+      }
+      .sec .price ul{
+        list-style: none;
+      }
+      .priceList{
+        list-style: none;
+        text-align: center;
+        margin: 2pc;
+      }
+      .priceList li{
+        margin: 10px 0;
+      }
+      .line-through{
+        color: grey;
+        text-decoration: line-through;
+
+      }
+      .whiteBtn {
+        border: 0;
+        padding: 10px 30px;
+        background-color: white;
+        color: #34bf49;
+        border-radius: 30px;
+        margin-top: 10px;
+        border: 1px solid #34bf49;
+        font-size: 19px;
+        font-family: 'poppins';
+      }
+      .whiteBtn:hover {
+        background-color: #34bf49;
+        border: 1px solid #34bf49;
+        color: white;
+      }
+      .price sup{
+        font-size: 30px;
+        color: #34bf49;
+      }
+      .price span{
+        font-size: 50px;
+        color: #34bf49;
+      }
+      .price .greenBtn{
+        font-size: 19px;
+        font-family: 'poppins';
+        border-radius: 30px;
+      }
+      .sec4{
+        display: grid;
+        place-items: center;
+        margin: 5pc 0;
+      }
+      .testimonials{
+        margin: 4pc 0 0 0;
+        display: flex;
+        gap: 20px;
+        justify-content: space-evenly;
+      }
+      .testimonials img{
+        width: 5pc;
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        margin-bottom: 2pc;
+      }
+      .testimonial {
+        text-align: center;
+        width: 20%;
+      }
+      footer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+        padding: 4pc 3pc;
+        background-color: #f3f4f4;
+      }
+      footer h3{
+        font-weight: 500;
+        margin-bottom: 1pc;
+        color: #2d465e;
+      }
+      footer .about p{
+        margin-bottom: 1pc;
+        
+      }
+      footer .navigation ul{
+        list-style: none;
+      }
+      footer li{
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+      footer .recentPosts p{
+        color: rgba(0, 0, 0, 0.44);
+        margin: 5px;
+      }
+      footer .connect i{
+        background-color: rgba(128, 128, 128, 0.277);
+        padding: 10px;
+        border-radius: 50%;
+        color: #2d465e;
+        margin-right: 8px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      footer .connect i:hover{
+        background-color: #34bf49;
+        color: white;
+      }
+      footer .links{
+        margin: 2pc 0;
+
+      }
+      footer .connect input{
+        border: 0;
+        background-color: transparent;
+        padding: 10px 20px;
+        border: 1px solid #2d465e;
+        border-radius: 5px;
+        width: 100%;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="firstContainer">
+      <header>
+        <div class="logo">
+          <h2>Active.</h2>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="text">
+          <p>Welcome</p>
+          <h1>Excepteur sint occaecat cupidatat non proident</h1>
+          <p id="paragraph">
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated they
+            live in Bookmarksgrove right at the coast of the Semantics, a large
+            language ocean.
+          </p>
+          <button class="greenBtn">Get Started</button>
+        </div>
+        <img src="img_h_6.jpg" alt="" />
+      </main>
+    </div>
+
+    <section class="sec1">
+      <div class="cont">
+        <div class="text">
+          <p>Our Mission</p>
+          <h2>
+            The Big Oxmox advised her not to do so, because there were
+            thousands.
+          </h2>
+          <div class="parSec1">
+            <p>
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country.
+            </p>
+            <p>
+              The Big Oxmox advised her not to do so, because there were
+              thousands of bad Comma4 wild Question Marks and devious Semikoli-
+            </p>
+          </div>
+          <button class="greenBtn">Get Started</button>
+        </div>
+        <img src="img_v_3.jpg" alt="" />
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <i class="ri-checkbox-blank-circle-line"></i>
+          <h4>Technology</h4>
+          <p>Separated they live in Bookmarksgrove right at the coast</p>
+        </div>
+        <div class="feature">
+          <i class="ri-command-line"></i>
+          <h4>Web Design</h4>
+          <p>Separated they live in Bookmarksgrove right at the coast</p>
+        </div>
+        <div class="feature">
+          <i class="ri-line-chart-line"></i>
+          <h4>Branding</h4>
+          <p>Separated they live in Bookmarksgrove right at the coast</p>
+        </div>
+      </div>
+
+      <div class="whyUs">
+        <img src="img_v_1.jpg" alt="" />
+        <div class="text">
+          <p>Why Us</p>
+          <h2>Far far Away Behind the Word Mountains</h2>
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia.
+          </p>
+          <p>
+            There live the blind texts. Separated they live in Bookmarksgrove
+            right at the coast of the Semantics, a large language ocean.
+          </p>
+          <div class="numbers">
+            <div class="number">
+              <h3>3.919</h3>
+              <div class="line"></div>
+              <p>Coffee</p>
+            </div>
+            <div class="number">
+              <h3>2.831</h3>
+              <div class="line"></div>
+              <p>Codes</p>
+            </div>
+            <div class="number">
+              <h3>1.914</h3>
+              <div class="line"></div>
+              <p>Projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec2">
+      <h3>Recent Posts</h3>
+      <h2>Blog Posts</h2>
+      <div class="blogs">
+        <div class="blog">
+          <img class="imgMain" src="img_h_4.jpg" alt="" />
+          <div class="blog-content">
+            <p class="date">DEVELOPMENT - July 20, 2020</p>
+            <div class="textSec2">
+              <h3>There live blind texts they live</h3>
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+            <div class="profile">
+              <img class="team" src="team-3.jpg" alt="" />
+              <div class="text">
+                <h3>Winston Gold</h3>
+                <p>Lead Product Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog">
+          <img class="imgMain" src="img_h_2.jpg" alt="" />
+          <div class="blog-content">
+            <p class="date">DEVELOPMENT - July 20, 2020</p>
+            <div class="textSec2">
+              <h3>There live blind texts they live</h3>
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+            <div class="profile">
+              <img class="team" src="team-1.jpg" alt="" />
+              <div class="text">
+                <h3>Winston Gold</h3>
+                <p>Lead Product Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog">
+          <img class="imgMain" src="img_h_3.jpg" alt="" />
+          <div class="blog-content">
+            <p class="date">DEVELOPMENT - July 20, 2020</p>
+            <div class="textSec2">
+              <h3>There live blind texts they live</h3>
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+            <div class="profile">
+              <img class="team" src="testimonials-1.jpg" alt="" />
+              <div class="text">
+                <h3>Winston Gold</h3>
+                <p>Lead Product Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec3">
+      <div class="text">
+        <h3>Plans</h3>
+      <h2>Pricing Table</h2>
+      </div>
+      <div class="priceTable">
+        <div class="price">
+          <h3>Free</h3>
+          <p><sup>$</sup><span>0</span>/ month</p>
+          <ul class="priceList">
+            <li>Aide Dere</li>
+            <li>Nec feugiat nisl</li>
+            <li>Nulla at volutpat dola</li>
+            <li class="line-through">Pharetra massa</li>
+            <li class="line-through">Massa ultricies mi</li>
+          </ul>
+          <button class="whiteBtn">Buy Now</button>
+        </div>
+        <div class="price">
+          <h3>Business</h3>
+          <p><sup>$</sup><span>19</span>/ month</p>
+          <ul class="priceList">
+            <li>Aide Dere</li>
+            <li>Nec feugiat nisl</li>
+            <li>Nulla at volutpat dola</li>
+            <li >Pharetra massa</li>
+            <li class="line-through">Massa ultricies mi</li>
+          </ul>
+          <button class="greenBtn">Buy Now</button>
+        </div>
+        <div class="price">
+          <h3>Developer</h3>
+          <p><sup>$</sup><span>29</span>/ month</p>
+          <ul class="priceList">
+            <li>Aide Dere</li>
+            <li>Nec feugiat nisl</li>
+            <li>Nulla at volutpat dola</li>
+            <li >Pharetra massa</li>
+            <li >Massa ultricies mi</li>
+          </ul>
+          <button class="whiteBtn">Buy Now</button>
+        </div>
+      </div>
+    </section>
+
+     <section class="sec4">
+      <h3>Happy Customers</h3>
+      <h2>Testimonials</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <img src="team-3.jpg" alt="" />
+          <h3>Lukas Devlin</h3>
+          <p>
+            'ere live the blind texts. Separated they live in Bookmarksgrove
+            right at the coast of the Semantics, a large language ocean.'
+          </p>
+        </div>
+        <div class="testimonial">
+          <img src="team-3.jpg" alt="" />
+          <h3>Lukas Devlin</h3>
+          <p>
+            'ere live the blind texts. Separated they live in Bookmarksgrove
+            right at the coast of the Semantics, a large language ocean.'
+          </p>
+        </div>
+        <div class="testimonial">
+          <img src="team-3.jpg" alt="" />
+          <h3>Lukas Devlin</h3>
+          <p>
+            'ere live the blind texts. Separated they live in Bookmarksgrove
+            right at the coast of the Semantics, a large language ocean.'
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="about">
+        <h3>About Us</h3>
+        <p>
+          There live the blind texts. Separated they live in Bookmarksgrove
+          right at the coast of the Semantics, a large language ocean.
+        </p>
+        <button class="greenBtn">Learn more</button>
+      </div>
+      <div class="navigation">
+        <ul>
+          <h3>Navigation</h3>
+          <li>Overview</li>
+          <li>About Us</li>
+          <li>Services</li>
+        </ul>
+      </div>
+      <div class="recentPosts">
+        <h3>Recent Posts</h3>
+        <p>May 3, 2020</p>
+        <span>There live the Blind Texts</span>
+        <p>May 3, 2020</p>
+        <span>There live the Blind Texts</span>
+      </div>
+
+      <div class="connect">
+        <h3>Connect</h3>
+        <div class="links">
+          <i class="ri-facebook-fill"></i>
+          <i class="ri-twitter-x-line"></i>
+          <i class="ri-linkedin-fill"></i>
+          <i class="ri-google-fill"></i>
+          <i class="ri-google-play-fill"></i>
+        </div>
+        <h3>Subscribe</h3>
+        <input type="email" placeholder="Enter your email">
+      </div>
+    </footer> 
+  </body>
+</html>
