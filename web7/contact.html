@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href=" https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css "
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/poppins");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "poppins";
+        /* padding:3pc 5pc; */
+        background-color: white;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+      }
+      header nav ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+      }
+      header a {
+        text-decoration: none;
+        color: black;
+      }
+      .firstContainer {
+        padding: 2pc 5pc;
+      }
+      footer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+        padding: 4pc 3pc;
+        background-color: #f3f4f4;
+      }
+      footer h3{
+        font-weight: 500;
+        margin-bottom: 1pc;
+        color: #2d465e;
+      }
+      footer .about p{
+        margin-bottom: 1pc;
+        
+      }
+      footer .navigation ul{
+        list-style: none;
+      }
+      footer li{
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+      footer .recentPosts p{
+        color: rgba(0, 0, 0, 0.44);
+        margin: 5px;
+      }
+      footer .connect i{
+        background-color: rgba(128, 128, 128, 0.277);
+        padding: 10px;
+        border-radius: 50%;
+        color: #2d465e;
+        margin-right: 8px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      footer .connect i:hover{
+        background-color: #34bf49;
+        color: white;
+      }
+      footer .links{
+        margin: 2pc 0;
+
+      }
+      footer .connect input{
+        border: 0;
+        background-color: transparent;
+        padding: 10px 20px;
+        border: 1px solid #2d465e;
+        border-radius: 5px;
+        width: 100%;
+      }
+      .greenBtn {
+        font-family: 'poppins';
+        border: 0;
+        padding: 10px 30px;
+        background-color: #34bf49;
+        color: white;
+        border-radius: 20px;
+        margin-top: 10px;
+        border: 1px solid #34bf49;
+      }
+      .greenBtn:hover {
+        background-color: white;
+        border: 1px solid #34bf49;
+        color: #34bf49;
+      }
+      header{
+        margin: 2pc 5pc;
+      }
+      .pageTitle{
+        padding: 2pc 5pc;
+        background-color: #f3f4f4;
+      }
+      main{
+        padding: 2pc 5pc;
+        display: grid;
+        grid-template-columns: 450px auto;
+        gap:5pc;
+      }
+      header a:hover{
+        color: #34bf49;
+      }
+      .pageTitle h2{
+        font-weight: 500;
+        color: #2d465e;
+        margin-bottom: 5px;
+      }
+      .pageTitle a{
+        color: #34bf49;
+        text-decoration: none;
+
+      }
+      main .text1{
+        padding: 50px;
+        box-shadow: 0 0 20px rgba(128, 128, 128, 0.363);
+      }
+      main .text1 h2, .text1 h3{
+    font-weight: 500;
+        color: #2d465e;
+      }
+      .text1 h2{
+        margin-bottom: 10px;
+      }
+      .infos{
+        margin-top: 20px;
+      }
+      .info{
+          padding: 20px 0;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+        .mail{
+            
+            border-bottom: 1px solid rgba(128, 128, 128, 0.326);
+            border-top: 1px solid rgba(128, 128, 128, 0.326);
+      }
+      .info i{
+        font-size: 25px;
+        color: #34bf49;
+      }
+      .text1 p{
+        font-size: 14px;
+        color: gray;
+      }
+      .nameEmail{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      input, textarea{
+        width: 100%;
+        border: 0;
+        padding:10px 18px;
+        border: 1px solid rgba(0, 0, 0, 0.14);
+        margin-bottom: 10px;
+        font-family: 'poppins';
+      }
+      textarea{
+        height: 20pc;
+      }
+     form button{
+        display: block;
+        margin: 0 auto;
+     }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h2>Active.</h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="pageTitle">
+      <h2>Contact</h2>
+      <p>
+        <span><a href="index.html">Home</a></span> / Contact
+      </p>
+    </div>
+
+    <main>
+      <div class="text1">
+        <div class="text2">
+          <h2>Get in touch</h2>
+          <p>
+            Et id eius voluptates atque nihil voluptatem enim in tempore minima
+            sit ad mollitia commodi minus.
+          </p>
+        </div>
+        <div class="infos">
+            <div class="info">
+                <i class="ri-map-pin-line"></i>
+                <div class="infoText">
+                    <h3>Location:</h3>
+                    <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+            </div>
+            <div class="info mail">
+                <i class="ri-mail-line"></i>
+                <div class="infoText">
+                    <h3>Email:</h3>
+                    <p>info@example.com</p>
+                </div>
+            </div>
+            <div class="info">
+                <i class="ri-smartphone-line"></i>
+                <div class="infoText">
+                    <h3>Call:</h3>
+                    <p>+1 5589 55488 55</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="form">
+        <form action="">
+            <div class="nameEmail">
+                <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            
+            </div>
+            <div class="subject">
+            <input type="text" placeholder="Subject">
+
+            </div>            
+            <textarea name="msg" id="msg"  placeholder="Message"></textarea>
+            
+            <button class="greenBtn">Send Message</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="about">
+        <h3>About Us</h3>
+        <p>
+          There live the blind texts. Separated they live in Bookmarksgrove
+          right at the coast of the Semantics, a large language ocean.
+        </p>
+        <button class="greenBtn">Learn more</button>
+      </div>
+      <div class="navigation">
+        <ul>
+          <h3>Navigation</h3>
+          <li>Overview</li>
+          <li>About Us</li>
+          <li>Services</li>
+        </ul>
+      </div>
+      <div class="recentPosts">
+        <h3>Recent Posts</h3>
+        <p>May 3, 2020</p>
+        <span>There live the Blind Texts</span>
+        <p>May 3, 2020</p>
+        <span>There live the Blind Texts</span>
+      </div>
+
+      <div class="connect">
+        <h3>Connect</h3>
+        <div class="links">
+          <i class="ri-facebook-fill"></i>
+          <i class="ri-twitter-x-line"></i>
+          <i class="ri-linkedin-fill"></i>
+          <i class="ri-google-fill"></i>
+          <i class="ri-google-play-fill"></i>
+        </div>
+        <h3>Subscribe</h3>
+        <input type="email" placeholder="Enter your email">
+      </div>
+    </footer> 
+
+  </body>
+</html>
