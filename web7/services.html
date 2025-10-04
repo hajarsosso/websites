@@ -10,6 +10,7 @@
     />
     <style>
       @import url("https://fonts.cdnfonts.com/css/poppins");
+
       * {
         margin: 0;
         padding: 0;
@@ -36,37 +37,39 @@
         text-decoration: none;
         color: black;
       }
+      header a:hover {
+        color: #34bf49;
+      }
       .firstContainer {
         padding: 2pc 5pc;
       }
-      footer{
+      footer {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
         justify-items: center;
         padding: 4pc 3pc;
         background-color: #f3f4f4;
       }
-      footer h3{
+      footer h3 {
         font-weight: 500;
         margin-bottom: 1pc;
         color: #2d465e;
       }
-      footer .about p{
+      footer .about p {
         margin-bottom: 1pc;
-        
       }
-      footer .navigation ul{
+      footer .navigation ul {
         list-style: none;
       }
-      footer li{
+      footer li {
         margin-bottom: 10px;
         cursor: pointer;
       }
-      footer .recentPosts p{
+      footer .recentPosts p {
         color: rgba(0, 0, 0, 0.44);
         margin: 5px;
       }
-      footer .connect i{
+      footer .connect i {
         background-color: rgba(128, 128, 128, 0.277);
         padding: 10px;
         border-radius: 50%;
@@ -75,15 +78,14 @@
         font-size: 20px;
         cursor: pointer;
       }
-      footer .connect i:hover{
+      footer .connect i:hover {
         background-color: #34bf49;
         color: white;
       }
-      footer .links{
+      footer .links {
         margin: 2pc 0;
-
       }
-      footer .connect input{
+      footer .connect input {
         border: 0;
         background-color: transparent;
         padding: 10px 20px;
@@ -92,7 +94,7 @@
         width: 100%;
       }
       .greenBtn {
-        font-family: 'poppins';
+        font-family: "poppins";
         border: 0;
         padding: 10px 30px;
         background-color: #34bf49;
@@ -106,23 +108,69 @@
         border: 1px solid #34bf49;
         color: #34bf49;
       }
-      header{
+      header {
         margin: 2pc 5pc;
       }
-      .pageTitle{
+      .pageTitle {
         padding: 2pc 5pc;
         background-color: #f3f4f4;
       }
-      main{
-        padding: 2pc 5pc;
-        display: grid;
-        grid-template-columns: 450px auto;
-        gap:5pc;
+
+      .sec1 {
+        padding: 3pc 5pc;
+        background-color: white;
       }
-      header a:hover{
+
+      .sec1 .cont {
+        display: flex;
+        justify-content: space-between;
+        gap: 90px;
+        align-items: center;
+        background-color: white;
+        /* padding: 3pc; */
+      }
+     
+      .sec1 .cont .text {
+        font-size: 15px;
+        width: 38%;
+      }
+      .parSec1 {
+        margin: 25px 0;
+      }
+
+      .features {
+        display: flex;
+        background-color: #f3f4f4;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.458);
+      }
+      .feature {
+        margin: 5pc;
+      }
+      .feature i {
+        font-size: 60px;
         color: #34bf49;
       }
-      .pageTitle h2{
+      .cont2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 30px;
+      }
+      .service{
+        width: 80%;
+      }
+      .service i{
+        font-size: 60px;
+        color: #34bf49;
+    
+      
+    }
+        .service h3{
+            font-weight: 500;
+            color: #2d465e;
+
+        }
+        
+        .pageTitle h2{
         font-weight: 500;
         color: #2d465e;
         margin-bottom: 5px;
@@ -132,59 +180,6 @@
         text-decoration: none;
 
       }
-      main .text1{
-        padding: 50px;
-        box-shadow: 0 0 20px rgba(128, 128, 128, 0.363);
-      }
-      main .text1 h2, .text1 h3{
-    font-weight: 500;
-        color: #2d465e;
-      }
-      .text1 h2{
-        margin-bottom: 10px;
-      }
-      .infos{
-        margin-top: 20px;
-      }
-      .info{
-          padding: 20px 0;
-          display: flex;
-          align-items: center;
-          gap: 20px;
-        }
-        .mail{
-            
-            border-bottom: 1px solid rgba(128, 128, 128, 0.326);
-            border-top: 1px solid rgba(128, 128, 128, 0.326);
-      }
-      .info i{
-        font-size: 25px;
-        color: #34bf49;
-      }
-      .text1 p{
-        font-size: 14px;
-        color: gray;
-      }
-      .nameEmail{
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-      }
-      input, textarea{
-        width: 100%;
-        border: 0;
-        padding:10px 18px;
-        border: 1px solid rgba(0, 0, 0, 0.14);
-        margin-bottom: 10px;
-        font-family: 'poppins';
-      }
-      textarea{
-        height: 20pc;
-      }
-     form button{
-        display: block;
-        margin: 0 auto;
-     }
     </style>
   </head>
   <body>
@@ -203,63 +198,74 @@
     </header>
 
     <div class="pageTitle">
-      <h2>Contact</h2>
+      <h2>Services</h2>
       <p>
-        <span><a href="index.html">Home</a></span> / Contact
+        <span><a href="index.html">Home</a></span> / Services
       </p>
     </div>
 
-    <main>
-      <div class="text1">
-        <div class="text2">
-          <h2>Get in touch</h2>
-          <p>
-            Et id eius voluptates atque nihil voluptatem enim in tempore minima
-            sit ad mollitia commodi minus.
-          </p>
+    <div class="sec1">
+      <div class="cont">
+        <div class="text">
+          <p>Our Mission</p>
+          <h2>
+            The Big Oxmox advised her not to do so, because there were
+            thousands.
+          </h2>
+          <div class="parSec1">
+            <p>
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country.
+            </p>
+            <p>
+              The Big Oxmox advised her not to do so, because there were
+              thousands of bad Comma4 wild Question Marks and devious Semikoli-
+            </p>
+          </div>
+          <button class="greenBtn">Get Started</button>
         </div>
-        <div class="infos">
-            <div class="info">
-                <i class="ri-map-pin-line"></i>
-                <div class="infoText">
-                    <h3>Location:</h3>
-                    <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-            </div>
-            <div class="info mail">
-                <i class="ri-mail-line"></i>
-                <div class="infoText">
-                    <h3>Email:</h3>
-                    <p>info@example.com</p>
-                </div>
-            </div>
-            <div class="info">
-                <i class="ri-smartphone-line"></i>
-                <div class="infoText">
-                    <h3>Call:</h3>
-                    <p>+1 5589 55488 55</p>
-                </div>
-            </div>
+        <div class="cont2">
+          <div class="service">
+            <i class="ri-search-line"></i>
+            <h3>Square</h3>
+            <p>Separated they live in Bookmarksgrove right at the coast</p>
+          </div>
+          <div class="service">
+            <i class="ri-command-line"></i>
+            <h3>Square</h3>
+            <p>Separated they live in Bookmarksgrove right at the coast</p>
+          </div>
+          <div class="service">
+            <i class="ri-box-1-line"></i>
+            <h3>Square</h3>
+            <p>Separated they live in Bookmarksgrove right at the coast</p>
+          </div>
+          <div class="service">
+            <i class="ri-global-line"></i>
+            <h3>Square</h3>
+            <p>Separated they live in Bookmarksgrove right at the coast</p>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div class="form">
-        <form action="">
-            <div class="nameEmail">
-                <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            
-            </div>
-            <div class="subject">
-            <input type="text" placeholder="Subject">
-
-            </div>            
-            <textarea name="msg" id="msg"  placeholder="Message"></textarea>
-            
-            <button class="greenBtn">Send Message</button>
-        </form>
+    <div class="features">
+      <div class="feature">
+        <i class="ri-checkbox-blank-circle-line"></i>
+        <h4>Technology</h4>
+        <p>Separated they live in Bookmarksgrove right at the coast</p>
       </div>
-    </main>
+      <div class="feature">
+        <i class="ri-command-line"></i>
+        <h4>Web Design</h4>
+        <p>Separated they live in Bookmarksgrove right at the coast</p>
+      </div>
+      <div class="feature">
+        <i class="ri-line-chart-line"></i>
+        <h4>Branding</h4>
+        <p>Separated they live in Bookmarksgrove right at the coast</p>
+      </div>
+    </div>
 
     <footer>
       <div class="about">
@@ -296,9 +302,8 @@
           <i class="ri-google-play-fill"></i>
         </div>
         <h3>Subscribe</h3>
-        <input type="email" placeholder="Enter your email">
+        <input type="email" placeholder="Enter your email" />
       </div>
-    </footer> 
-
+    </footer>
   </body>
 </html>

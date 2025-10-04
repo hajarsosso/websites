@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href=" https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css "
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/poppins");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "poppins";
+        /* padding:3pc 5pc; */
+        background-color: white;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+      }
+      header nav ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+      }
+      header a {
+        text-decoration: none;
+        color: black;
+      }
+      header a:hover{
+        color: #34bf49;
+      }
+      .firstContainer {
+        padding: 2pc 5pc;
+      }
+      footer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+        padding: 4pc 3pc;
+        background-color: #f3f4f4;
+      }
+      footer h3{
+        font-weight: 500;
+        margin-bottom: 1pc;
+        color: #2d465e;
+      }
+      footer .about p{
+        margin-bottom: 1pc;
+        
+      }
+      footer .navigation ul{
+        list-style: none;
+      }
+      footer li{
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+      footer .recentPosts p{
+        color: rgba(0, 0, 0, 0.44);
+        margin: 5px;
+      }
+      footer .connect i{
+        background-color: rgba(128, 128, 128, 0.277);
+        padding: 10px;
+        border-radius: 50%;
+        color: #2d465e;
+        margin-right: 8px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      footer .connect i:hover{
+        background-color: #34bf49;
+        color: white;
+      }
+      footer .links{
+        margin: 2pc 0;
+
+      }
+      footer .connect input{
+        border: 0;
+        background-color: transparent;
+        padding: 10px 20px;
+        border: 1px solid #2d465e;
+        border-radius: 5px;
+        width: 100%;
+      }
+      .greenBtn {
+        font-family: 'poppins';
+        border: 0;
+        padding: 10px 30px;
+        background-color: #34bf49;
+        color: white;
+        border-radius: 20px;
+        margin-top: 10px;
+        border: 1px solid #34bf49;
+      }
+      .greenBtn:hover {
+        background-color: white;
+        border: 1px solid #34bf49;
+        color: #34bf49;
+      }
+      header{
+        margin: 2pc 5pc;
+      }
+      .pageTitle{
+        padding: 2pc 5pc;
+        background-color: #f3f4f4;
+      }
+      .sec1 {
+        padding: 3pc 5pc;
+        background-color: #f3f4f4;
+      }
+
+      .sec1 .cont {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        padding: 3pc;
+      }
+      .sec1 .cont img {
+        width: 25pc;
+      }
+      .sec1 .cont .text {
+        font-size: 15px;
+        width: 38%;
+      }
+      .parSec1 {
+        margin: 25px 0;
+      }
+      .features {
+        display: flex;
+      }
+      .feature {
+        margin: 5pc;
+      }
+      .feature i {
+        font-size: 60px;
+        color: #34bf49;
+      }
+      .whyUs {
+        margin: 5pc;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .whyUs img {
+        width: 35pc;
+      }
+      .whyUs .text {
+        font-size: 15px;
+        width: 38%;
+      }
+      .whyUs .text p {
+        margin: 10px 0;
+      }
+      .whyUs .numbers {
+        display: flex;
+        justify-content: space-between;
+      }
+      .whyUs .number h3 {
+        font-size: 30px;
+        font-weight: 300;
+        margin-top: 10px;
+      }
+      .whyUs .line {
+        width: 19px;
+        height: 2px;
+        background-color: #34bf499a;
+      }
+      .sec4{
+        display: grid;
+        place-items: center;
+        margin: 5pc 0;
+      }
+      .testimonials{
+        margin: 4pc 0 0 0;
+        display: flex;
+        gap: 20px;
+        justify-content: space-evenly;
+      }
+      .testimonials img{
+        width: 5pc;
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        margin-bottom: 2pc;
+      }
+      .testimonial {
+        text-align: center;
+        width: 20%;
+      }
+      .pageTitle h2{
+        font-weight: 500;
+        color: #2d465e;
+        margin-bottom: 5px;
+      }
+      .pageTitle a{
+        color: #34bf49;
+        text-decoration: none;
+
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <h2>Active.</h2>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="pageTitle">
+      <h2>About</h2>
+      <p>
+        <span><a href="index.html">Home</a></span> / About
+      </p>
+    </div>
+
+    
+    <section class="sec1">
+      <div class="cont">
+        <div class="text">
+          <p>Our Mission</p>
+          <h2>
+            The Big Oxmox advised her not to do so, because there were
+            thousands.
+          </h2>
+          <div class="parSec1">
+            <p>
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country.
+            </p>
+            <p>
+              The Big Oxmox advised her not to do so, because there were
+              thousands of bad Comma4 wild Question Marks and devious Semikoli-
+            </p>
+          </div>
+          <button class="greenBtn">Get Started</button>
+        </div>
+        <img src="images/img_v_3.jpg" alt="" />
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <i class="ri-checkbox-blank-circle-line"></i>
+          <h4>Technology</h4>
+          <p>Separated they live in Bookmarksgrove right at the coast</p>
+        </div>
+        <div class="feature">
+          <i class="ri-command-line"></i>
+          <h4>Web Design</h4>
+          <p>Separated they live in Bookmarksgrove right at the coast</p>
+        </div>
+        <div class="feature">
+          <i class="ri-line-chart-line"></i>
+          <h4>Branding</h4>
+          <p>Separated they live in Bookmarksgrove right at the coast</p>
+        </div>
+      </div>
+
+      <div class="whyUs">
+        <img src="images/img_v_1.jpg" alt="" />
+        <div class="text">
+          <p>Why Us</p>
+          <h2>Far far Away Behind the Word Mountains</h2>
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia.
+          </p>
+          <p>
+            There live the blind texts. Separated they live in Bookmarksgrove
+            right at the coast of the Semantics, a large language ocean.
+          </p>
+          <div class="numbers">
+            <div class="number">
+              <h3>3.919</h3>
+              <div class="line"></div>
+              <p>Coffee</p>
+            </div>
+            <div class="number">
+              <h3>2.831</h3>
+              <div class="line"></div>
+              <p>Codes</p>
+            </div>
+            <div class="number">
+              <h3>1.914</h3>
+              <div class="line"></div>
+              <p>Projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec4">
+      <h3>Happy Customers</h3>
+      <h2>Testimonials</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <img src="images/team-3.jpg" alt="" />
+          <h3>Lukas Devlin</h3>
+          <p>
+            'ere live the blind texts. Separated they live in Bookmarksgrove
+            right at the coast of the Semantics, a large language ocean.'
+          </p>
+        </div>
+        <div class="testimonial">
+          <img src="images/team-3.jpg" alt="" />
+          <h3>Lukas Devlin</h3>
+          <p>
+            'ere live the blind texts. Separated they live in Bookmarksgrove
+            right at the coast of the Semantics, a large language ocean.'
+          </p>
+        </div>
+        <div class="testimonial">
+          <img src="images/team-3.jpg" alt="" />
+          <h3>Lukas Devlin</h3>
+          <p>
+            'ere live the blind texts. Separated they live in Bookmarksgrove
+            right at the coast of the Semantics, a large language ocean.'
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="about">
+        <h3>About Us</h3>
+        <p>
+          There live the blind texts. Separated they live in Bookmarksgrove
+          right at the coast of the Semantics, a large language ocean.
+        </p>
+        <button class="greenBtn">Learn more</button>
+      </div>
+      <div class="navigation">
+        <ul>
+          <h3>Navigation</h3>
+          <li>Overview</li>
+          <li>About Us</li>
+          <li>Services</li>
+        </ul>
+      </div>
+      <div class="recentPosts">
+        <h3>Recent Posts</h3>
+        <p>May 3, 2020</p>
+        <span>There live the Blind Texts</span>
+        <p>May 3, 2020</p>
+        <span>There live the Blind Texts</span>
+      </div>
+
+      <div class="connect">
+        <h3>Connect</h3>
+        <div class="links">
+          <i class="ri-facebook-fill"></i>
+          <i class="ri-twitter-x-line"></i>
+          <i class="ri-linkedin-fill"></i>
+          <i class="ri-google-fill"></i>
+          <i class="ri-google-play-fill"></i>
+        </div>
+        <h3>Subscribe</h3>
+        <input type="email" placeholder="Enter your email">
+      </div>
+    </footer> 
+
+</body>
+</html>
