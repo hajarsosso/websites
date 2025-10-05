@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href=" https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css "
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/poppins");
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body{
+        font-family: 'poppins';
+      }
+      header{
+        display: flex;
+        justify-content: space-between;
+        padding:1pc 3pc;
+        align-items: center;
+      }
+      header .logo{
+        font-size: 20px;
+      }
+      nav ul{
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+    nav ul li{
+          padding: 5px 8px;
+        border-radius: 15px;
+      }
+      nav ul li:hover{
+        background-color: rgba(210, 210, 210, 0.478);
+      }
+      header .buttons button{
+          font-size: 18px;
+          font-family: 'poppins';
+          padding: 5px 8px;
+          border-radius: 18px;
+
+      }
+      header .buttons .signIn{
+        border: 0;
+        background-color: transparent;
+        margin-right: 12px;
+
+      }
+      header .buttons .signIn:hover{
+        color: white;
+        background-color: black;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h2>Nuu</h2>
+      </div>
+      <nav>
+        <ul>
+          <li>Overview</li>
+          <li>Examples</li>
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Resources</li>
+        </ul>
+      </nav>
+      <div class="buttons">
+        <button class="signIn">Sign In</button>
+        <button class="Start">Get Started</button>
+      </div>
+    </header>
+
+    <!-- <main>
+      <div class="title">
+        <h1>Meet Your New</h1>
+        <h1>Beach Club Menu</h1>
+      </div>
+      <div class="buttons">
+        <button class="live"><i class="ri-live-fill"></i>Try Live Demo</button>
+        <button>Get Started for Free</button>
+      </div>
+      <img src="main.png" alt="" />
+    </main>
+
+    <section class="sec1">
+      <h2>
+        Wave (a socially distant) goodbye to physical menus and embrace the
+        future of contactless mobile menus.
+      </h2>
+      <h2>Say hello to Nuu</h2>
+      <p>
+        If your business serves food, Nuu serves you. Nuu places the power to
+        create beautiful mobile menus for restaurants right at your fingertips.
+      </p>
+      <div class="estab">
+        <input type="text" placeholder="Name of Your Estanlishment" />
+        <i class="ri-arrow-right-circle-line"></i>
+      </div>
+    </section>
+
+    <section class="sec2">
+      <div class="card">
+        <div class="text">
+          <p>
+            Nuu offers a broad selection of elegantly designed, customizable
+            mobile menus tailored around your business. No matter the cuisine or
+            complexity of your establishment's offering, Nuu is made with you in
+            mind. Add your logo and select your signature colors to make it
+            another extension of your brand.
+          </p>
+          <a href="#"
+            >Explore Nuu Menus <i class="ri-arrow-right-s-line"></i
+          ></a>
+        </div>
+        <img src="image.png" alt="" />
+      </div>
+      <div class="card">
+        <img src="image.png" alt="" />
+        <div class="text">
+          <p>
+            Nuu offers a broad selection of elegantly designed, customizable
+            mobile menus tailored around your business. No matter the cuisine or
+            complexity of your establishment's offering, Nuu is made with you in
+            mind. Add your logo and select your signature colors to make it
+            another extension of your brand.
+          </p>
+          <a href="#"
+            >Explore Nuu Menus <i class="ri-arrow-right-s-line"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec3">
+      <h2>First Taste, <span>New Favorites.</span></h2>
+      <p>
+        Sample a spread of Nuu menus below and experience the potential of your
+        own menu site for yourself.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <img
+            src="top-view-restaurant-dishes-exquisite-cuisine_1077802-54169-719132284.jpg"
+            alt=""
+          />
+          <h2>YUCAtaco</h2>
+          <p>Taqueria - Mexican</p>
+        </div>
+        <div class="card">
+          <img
+            src="top-view-restaurant-dishes-exquisite-cuisine_1077802-54169-719132284.jpg"
+            alt=""
+          />
+          <h2>YUCAtaco</h2>
+          <p>Taqueria - Mexican</p>
+        </div>
+        <div class="card">
+          <img
+            src="top-view-restaurant-dishes-exquisite-cuisine_1077802-54169-719132284.jpg"
+            alt=""
+          />
+          <h2>YUCAtaco</h2>
+          <p>Taqueria - Mexican</p>
+        </div>
+        <div class="card">
+          <img
+            src="top-view-restaurant-dishes-exquisite-cuisine_1077802-54169-719132284.jpg"
+            alt=""
+          />
+          <h2>YUCAtaco</h2>
+          <p>Taqueria - Mexican</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec4">
+      <h2>Stay <span>in the Loop</span></h2>
+      <p>
+        Join our mailing list to stay in the know about new and upcoming
+        features, community news, and product updates. No spamming —promise.
+      </p>
+      <div class="email">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your Email Address"
+        />
+        <button>Subscribe</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div>
+          <h2>Nuu</h2>
+        </div>
+        <div>
+          <ul>
+            <li>Overview</li>
+            <li>Overview</li>
+            <li>Overview</li>
+            <li>Overview</li>
+            <li>Overview</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>FAQ</li>
+            <li>FAQ</li>
+            <li>FAQ</li>
+            <li>FAQ</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>terms</li>
+            <li>terms</li>
+            <li>terms</li>
+            <li>terms</li>
+            <li>
+              <i class="ri-instagram-line"></i>
+              <i class="ri-facebook-fill"></i> <i class="ri-twitter-fill"></i>
+              <i class="ri-linkedin-box-fill"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="credit">
+        <i class="ri-user-smile-line"></i>
+        <p>Copyright O 2021 All Rights Reserved</p>
+      </div>
+    </footer> -->
+  </body>
+</html>
