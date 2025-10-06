@@ -5,58 +5,310 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
+      href="https://db.onlinewebfonts.com/c/ba73b46734d7088fd2deeaa3fd816ad1?family=Excelsior+LT+W05+Italic"
+      rel="stylesheet"
+    />
+
+    <link
       href=" https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css "
       rel="stylesheet"
     />
     <style>
       @import url("https://fonts.cdnfonts.com/css/poppins");
-      *{
+      @import url("https://fonts.cdnfonts.com/css/associate-sans");
+      * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
       }
-      body{
-        font-family: 'poppins';
+      body {
+        font-family: "poppins";
       }
-      header{
-        display: flex;
-        justify-content: space-between;
-        padding:1pc 3pc;
+      header {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        padding: 1pc 3pc;
         align-items: center;
       }
-      header .logo{
+      header .logo {
         font-size: 20px;
+        justify-self: start;
       }
-      nav ul{
+      header nav {
+        justify-self: center;
+      }
+      nav ul {
         display: flex;
         list-style: none;
         gap: 30px;
-    }
-    nav ul li{
-          padding: 5px 8px;
+      }
+      nav ul li {
+        padding: 5px 8px;
         border-radius: 15px;
       }
-      nav ul li:hover{
+      nav ul li:hover {
         background-color: rgba(210, 210, 210, 0.478);
       }
-      header .buttons button{
-          font-size: 18px;
-          font-family: 'poppins';
-          padding: 5px 8px;
-          border-radius: 18px;
-
+      header .buttons {
+        justify-self: end;
       }
-      header .buttons .signIn{
+      button {
+        font-size: 16px;
+        font-family: "poppins";
+        padding: 5px 8px;
+        border-radius: 18px;
+      }
+      header .buttons .signIn {
         border: 0;
         background-color: transparent;
         margin-right: 12px;
-
       }
-      header .buttons .signIn:hover{
+      header .buttons .signIn:hover {
         color: white;
         background-color: black;
         border: 1px solid black;
       }
+      .Start {
+        color: white;
+        background-color: black;
+        border: 1px solid black;
+        
+      }
+      .Start:hover {
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+      }
+      main {
+        display: grid;
+        place-items: center;
+        margin: 5pc 0;
+      }
+      main .title {
+        margin:4pc 0 8pc 0;
+        display: grid;
+        justify-items: center;
+        text-align: center;
+      }
+      main .text {
+        font-size: 30px;
+      }
+      .font1 {
+        font-family: "Excelsior";
+        font-weight: 500;
+        font-style: italic;
+      }
+      .font2 {
+        font-family: "Associate Sans";
+        font-weight: 400;
+      }
+      main .buttons{
+        margin: 3pc 0;
+      }
+      main .buttons .live{
+        background-color: transparent;
+        margin-right: 12px;
+      }
+      main .buttons .live:hover{
+        color: white;
+        background-color: black;
+        
+        
+      }
+      main .live i{
+        margin-right: 10px;
+      }
+      main img{
+        border-radius: 3pc;
+        width: 90%;
+      }
+      .sec1{
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding:0 19pc ;
+        font-size: 23px;
+      }
+      .sec1 .title{
+        margin-bottom: 1pc;
+        font-size: 29px;
+      }
+      .sec1 p{
+        font-size: 20px;
+        margin: 1pc 0 4pc 0;
+    }
+    .sec1 .estab{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        /* border: 1px solid ; */
+        border-radius: 30px;
+        background-color: #f8f8f8;
+        padding: 10px 20px;
+    }
+    input{
+        border: 0;
+        font-size: 16px;
+        color: #949494;
+        width: 15pc;
+        background-color: transparent;
+        font-family: 'poppins';
+        
+    }
+    .sec1 .estab i{
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.836);
+       
+    }
+    .sec2{
+        display: grid;
+        place-items: center;
+        margin: 5pc 0;
+        row-gap: 2pc;
+    }
+
+    .sec2 .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        overflow: hidden;
+         border-radius: 3pc;
+        width: 90%;
+    }
+    .sec2 .img2{
+        width: 100%;
+        height: 100%;
+    }
+    .sec2 .text{
+        padding: 4pc;
+        display: grid;
+    }
+    .sec2 .text a{
+        color: black;
+        text-decoration: none;
+
+
+    }
+    .sec2 .card1{
+        
+        background-color: #f5f0d6;
+    }
+    .sec2 .card2{
+        background-color: #89f59e;
+    }
+    .sec3{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 5pc;
+    }
+    .sec3 .text{
+        margin: 5pc 20pc;
+        font-size: 20px;
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    .card img{
+        width: 20pc;
+        
+    }
+    .card{
+        background-color: blue;
+        border-radius: 40px;
+        overflow: hidden;
+        width: fit-content;
+        height: 30pc;
+        display: grid;
+    }
+    .card-text{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #yellow{
+        background-color: #f6e250;
+    }
+    #beige{
+        background-color: #f3efea;
+        color: darkgreen;
+    }
+    #black{
+        background-color: rgb(32, 32, 32);
+        color: beige;
+    }
+    #blue{
+        background-color: #1e3dbf;
+        color: white;
+    }
+    .sec4{
+        display: grid;
+        justify-items: center;
+        text-align: center;
+        background-color: #f8f8f8;
+        padding-bottom: 7pc;
+    }
+    .sec4 .text{
+        margin: 7pc 22pc 3pc;
+        font-size: 20px;
+    }
+    .sec4 .email{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border: 1px solid rgba(128, 128, 128, 0.278);
+        border-radius: 30px;
+        padding: 8px 8px 8px 15px;
+        background-color: #f8f8f8;
+        padding-left: 30px;
+    
+    }
+    .sec4 input{
+        border: 0;
+    }
+    .sec4 button{
+        color: white;
+        background-color: black;
+        border: 1px solid black;
+        
+    }
+    footer{
+        background-color: black;
+        color: #fafafacd;
+        padding: 3pc 5pc 4pc;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 3pc;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.378);
+    }
+    .footer ul{
+        list-style: none;
+    }
+    .footer i{
+        font-size: 25px;
+    }
+    .footer ul li{
+        padding-bottom: 8px;
+        cursor: pointer;
+    }
+    .footer .socials{
+        padding-top: 10px;
+    }
+    .credit{
+        text-align: center;
+        margin: 3pc 0 0 0;
+    }
+    .credit i{
+        font-size: 60px;
+       
+    }
+    .credit p{
+        padding-top: 3pc;
+    }
     </style>
   </head>
   <body>
@@ -79,24 +331,30 @@
       </div>
     </header>
 
-    <!-- <main>
+    <main>
       <div class="title">
-        <h1>Meet Your New</h1>
-        <h1>Beach Club Menu</h1>
+        <div class="text">
+          <h1 class="font1">Meet Your New</h1>
+          <h1 class="font2">Beach Club Menu</h1>
+        </div>
+        <div class="buttons">
+          <button class="live">
+            <i class="ri-live-fill"></i>Try Live Demo
+          </button>
+          <button class="Start">Get Started for Free</button>
+        </div>
       </div>
-      <div class="buttons">
-        <button class="live"><i class="ri-live-fill"></i>Try Live Demo</button>
-        <button>Get Started for Free</button>
-      </div>
-      <img src="main.png" alt="" />
+      <img src="images/img1.png" alt="" />
     </main>
 
-    <section class="sec1">
-      <h2>
+     <section class="sec1">
+      <div class="title">
+        <h2 class="font2">
         Wave (a socially distant) goodbye to physical menus and embrace the
         future of contactless mobile menus.
       </h2>
-      <h2>Say hello to Nuu</h2>
+      <h2 class="font1">Say hello to Nuu</h2>
+      </div>
       <p>
         If your business serves food, Nuu serves you. Nuu places the power to
         create beautiful mobile menus for restaurants right at your fingertips.
@@ -108,7 +366,7 @@
     </section>
 
     <section class="sec2">
-      <div class="card">
+      <div class="card card1">
         <div class="text">
           <p>
             Nuu offers a broad selection of elegantly designed, customizable
@@ -121,10 +379,10 @@
             >Explore Nuu Menus <i class="ri-arrow-right-s-line"></i
           ></a>
         </div>
-        <img src="image.png" alt="" />
+        <img class="img2" src="images/img2.png" alt="" />
       </div>
-      <div class="card">
-        <img src="image.png" alt="" />
+      <div class="card card2">
+        <img class="img2" src="images/img2.png" alt="" />
         <div class="text">
           <p>
             Nuu offers a broad selection of elegantly designed, customizable
@@ -141,53 +399,65 @@
     </section>
 
     <section class="sec3">
-      <h2>First Taste, <span>New Favorites.</span></h2>
+      <div class="text">
+        <h2><span class="font2">First Taste,</span> <span class="font1">New Favorites.</span></h2>
       <p>
         Sample a spread of Nuu menus below and experience the potential of your
         own menu site for yourself.
       </p>
+      </div>
       <div class="cards">
-        <div class="card">
+        <div class="card" id="yellow">
           <img
-            src="top-view-restaurant-dishes-exquisite-cuisine_1077802-54169-719132284.jpg"
+            src="images/img3.jpg"
             alt=""
           />
-          <h2>YUCAtaco</h2>
+          <div class="card-text">
+            <h2>YUCAtaco</h2>
           <p>Taqueria - Mexican</p>
+          </div>
         </div>
-        <div class="card">
+        <div class="card" id="beige">
           <img
-            src="top-view-restaurant-dishes-exquisite-cuisine_1077802-54169-719132284.jpg"
+            src="images/img3.jpg"
             alt=""
           />
-          <h2>YUCAtaco</h2>
+          <div class="card-text">
+            <h2>YUCAtaco</h2>
           <p>Taqueria - Mexican</p>
+          </div>
         </div>
-        <div class="card">
+        <div class="card" id="black">
           <img
-            src="top-view-restaurant-dishes-exquisite-cuisine_1077802-54169-719132284.jpg"
+            src="images/img3.jpg"
             alt=""
           />
-          <h2>YUCAtaco</h2>
+          <div class="card-text">
+            <h2>YUCAtaco</h2>
           <p>Taqueria - Mexican</p>
+          </div>
         </div>
-        <div class="card">
+        <div class="card" id="blue">
           <img
-            src="top-view-restaurant-dishes-exquisite-cuisine_1077802-54169-719132284.jpg"
+            src="images/img3.jpg"
             alt=""
           />
-          <h2>YUCAtaco</h2>
+          <div class="card-text">
+            <h2>YUCAtaco</h2>
           <p>Taqueria - Mexican</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="sec4">
-      <h2>Stay <span>in the Loop</span></h2>
+      <div class="text">
+        <h2><span class="font2">Stay</span> <span class="font1">in the Loop.</span></h2>
       <p>
         Join our mailing list to stay in the know about new and upcoming
         features, community news, and product updates. No spamming —promise.
       </p>
+      </div>
       <div class="email">
         <input
           type="email"
@@ -207,28 +477,28 @@
         <div>
           <ul>
             <li>Overview</li>
-            <li>Overview</li>
-            <li>Overview</li>
-            <li>Overview</li>
-            <li>Overview</li>
+            <li>Examples</li>
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Resources</li>
           </ul>
         </div>
         <div>
           <ul>
+            <li>How to Get Started</li>
             <li>FAQ</li>
-            <li>FAQ</li>
-            <li>FAQ</li>
-            <li>FAQ</li>
-            <li>FAQ</li>
+            <li>About</li>
+            <li>Newsletters</li>
+            <li>Contact</li>
           </ul>
         </div>
         <div>
           <ul>
-            <li>terms</li>
-            <li>terms</li>
-            <li>terms</li>
-            <li>terms</li>
-            <li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Accessibility</li>
+            <li>Disclaimer</li>
+            <li class="socials">
               <i class="ri-instagram-line"></i>
               <i class="ri-facebook-fill"></i> <i class="ri-twitter-fill"></i>
               <i class="ri-linkedin-box-fill"></i>
@@ -240,6 +510,6 @@
         <i class="ri-user-smile-line"></i>
         <p>Copyright O 2021 All Rights Reserved</p>
       </div>
-    </footer> -->
+    </footer> 
   </body>
 </html>
